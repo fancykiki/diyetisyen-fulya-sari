@@ -1,0 +1,96 @@
+<%- include('partials/header') %>
+<%- include('partials/navbar') %>
+
+<main>
+  <section class="page-hero">
+    <div class="container">
+      <div class="page-hero-content">
+        <h1>Beslenme Makaleleri</h1>
+        <div class="breadcrumb">
+          <a href="/">Ana Sayfa</a> / <span>Makaleler</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="blog section">
+    <div class="container">
+      <div class="blog-layout">
+        <div class="blog-main">
+          <% if (filtrelenmis.length === 0) { %>
+          <div class="blog-empty">
+            <i data-lucide="search" style="width:40px;height:40px;"></i>
+            <h3>Bu kategoride henüz makale bulunamadı.</h3>
+            <a href="/makaleler" class="btn btn-primary">Tüm Makaleler</a>
+          </div>
+          <% } %>
+          <div class="blog-grid">
+            <% filtrelenmis.forEach(function(makale) { %>
+            <article class="blog-card">
+              <div class="blog-card-image">
+                <% if (makale.image && makale.image.startsWith('http')) { %>
+                <img src="<%= makale.image %>" alt="<%= makale.title %>" loading="lazy" />
+                <% } else { %>
+                <div class="blog-img-placeholder">
+                  <i data-lucide="leaf" style="width:30px;height:30px;"></i>
+                </div>
+                <% } %>
+                <span class="blog-category"><%= makale.category %></span>
+              </div>
+              <div class="blog-card-body">
+                <div class="blog-meta">
+                  <span><i data-lucide="calendar" style="width:14px;height:14px;"></i> <%= makale.date %></span>
+                  <span><i data-lucide="clock" style="width:14px;height:14px;"></i> <%= makale.readTime %> dk okuma</span>
+                </div>
+                <h3 class="blog-card-title">
+                  <a href="/makale/<%= makale.slug %>"><%= makale.title %></a>
+                </h3>
+                <p class="blog-card-desc"><%= makale.metaDesc.substring(0, 120) %>...</p>
+                <div class="blog-card-footer">
+                  <span class="blog-author"><i data-lucide="user" style="width:14px;height:14px;"></i> <%= makale.author %></span>
+                  <a href="/makale/<%= makale.slug %>" class="blog-read-more">Devamını Oku <i data-lucide="arrow-right" style="width:14px;height:14px;"></i></a>
+                </div>
+              </div>
+            </article>
+            <% }); %>
+          </div>
+        </div>
+        <aside class="blog-sidebar">
+          <div class="sidebar-widget">
+            <h3>Kategoriler</h3>
+            <ul class="sidebar-categories">
+              <li><a href="/makaleler" class="<%= !aktifKategori ? 'active' : '' %>">Tümü <span>(<%= makaleler.length %>)</span></a></li>
+              <% kategoriler.forEach(function(kat) { %>
+              <li>
+                <a href="/makaleler?kategori=<%= encodeURIComponent(kat) %>" class="<%= aktifKategori === kat ? 'active' : '' %>">
+                  <%= kat %> <span>(<%= makaleler.filter(m => m.category === kat).length %>)</span>
+                </a>
+              </li>
+              <% }); %>
+            </ul>
+          </div>
+          <div class="sidebar-widget">
+            <h3>Popüler Makaleler</h3>
+            <ul class="sidebar-popular">
+              <% makaleler.filter(m => m.featured).slice(0, 4).forEach(function(m) { %>
+              <li>
+                <a href="/makale/<%= m.slug %>">
+                  <span class="popular-number"><i data-lucide="file-text" style="width:16px;height:16px;"></i></span>
+                  <span class="popular-title"><%= m.title.substring(0, 50) %></span>
+                </a>
+              </li>
+              <% }); %>
+            </ul>
+          </div>
+          <div class="sidebar-widget sidebar-cta">
+            <h3>Randevu Alın</h3>
+            <p>Size özel beslenme programı için hemen randevu alın.</p>
+            <a href="/iletisim" class="btn btn-primary btn-block">İletişime Geç</a>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </section>
+</main>
+
+<%- include('partials/footer') %>

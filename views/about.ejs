@@ -1,0 +1,218 @@
+<%- include('partials/header') %>
+<%- include('partials/navbar') %>
+
+<main>
+  <!-- ===== 1. ABOUT HERO ===== -->
+  <section class="about-hero">
+    <div class="about-hero-bg"></div>
+    <div class="about-hero-pattern" aria-hidden="true"></div>
+    <div class="about-hero-glow" aria-hidden="true"></div>
+    <div class="container">
+      <div class="about-hero-wrapper">
+        <div class="about-hero-content">
+          <div class="breadcrumb">
+            <a href="/">Ana Sayfa</a>
+            <span class="breadcrumb-sep"><i data-lucide="chevron-right" style="width:12px;height:12px;"></i></span>
+            <span>Hakkımızda</span>
+          </div>
+          <span class="about-hero-badge">
+            <span class="badge-dot"></span>
+            KİŞİSEL MARKA & DANIŞMANLIK
+          </span>
+          <h1 class="about-hero-title"><%= about.title %></h1>
+          <p class="about-hero-subtitle"><%= about.subtitle %></p>
+          <p class="about-hero-desc"><%= about.description[0].substring(0, 140) %>...</p>
+        </div>
+        <div class="about-hero-right">
+          <div class="hero-stats-strip">
+            <div class="hero-stat-item">
+              <div class="hero-stat-icon"><i data-lucide="user-check" style="width:18px;height:18px;"></i></div>
+              <div class="hero-stat-text">
+                <span class="hero-stat-label">Kişiye Özel Program</span>
+                <span class="hero-stat-desc">Yaşam düzeninize uygun beslenme yaklaşımı</span>
+              </div>
+            </div>
+            <div class="hero-stat-divider"></div>
+            <div class="hero-stat-item">
+              <div class="hero-stat-icon"><i data-lucide="monitor" style="width:18px;height:18px;"></i></div>
+              <div class="hero-stat-text">
+                <span class="hero-stat-label">Online & Yüz Yüze</span>
+                <span class="hero-stat-desc">Esnek danışmanlık seçeneği</span>
+              </div>
+            </div>
+            <div class="hero-stat-divider"></div>
+            <div class="hero-stat-item">
+              <div class="hero-stat-icon"><i data-lucide="refresh-cw" style="width:18px;height:18px;"></i></div>
+              <div class="hero-stat-text">
+                <span class="hero-stat-label">Sürdürülebilir Takip</span>
+                <span class="hero-stat-desc">Haftalık düzenli destek ve değerlendirme</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== 2. ABOUT CONTENT - Premium Editorial 2-Column ===== -->
+  <section class="about section" id="about">
+    <div class="container">
+      <div class="about-bg-shapes" aria-hidden="true">
+        <div class="about-shape as-1"></div>
+        <div class="about-shape as-2"></div>
+        <div class="about-shape as-3"></div>
+        <div class="about-shape as-4"></div>
+      </div>
+      <div class="about-wrapper-new">
+        <div class="about-visual-showcase reveal-left">
+          <div class="about-ambient-glow"></div>
+          <div class="about-image-backdrop"></div>
+          <div class="about-image-frame-new">
+            <div class="about-image-card-new">
+              <img src="<%= about.image %>" alt="Dyt. Fulya Sarı - Diyetisyen" class="about-profile-img-new" loading="lazy">
+              <div class="about-img-overlay-new"></div>
+            </div>
+            <div class="about-decorative-frame-1"></div>
+            <div class="about-decorative-frame-2"></div>
+            <div class="about-decorative-line-v"></div>
+            <div class="about-decorative-line-h"></div>
+          </div>
+          <div class="about-experience-seal">
+            <div class="seal-inner">
+              <div class="seal-badge">
+                <svg class="seal-text-svg" viewBox="0 0 100 100">
+                  <defs>
+                    <path id="sealPath" d="M 50,50 m -37,0 a 37,37 0 1,1 74,0 a 37,37 0 1,1 -74,0" fill="none"/>
+                  </defs>
+                  <text class="seal-text"><textPath href="#sealPath">DİYETİSYEN FULYA SARI ★ DANIŞMANLIK ★</textPath></text>
+                </svg>
+                <div class="seal-center">
+                  <span class="seal-number">DY</span>
+                  <span class="seal-year">DYT</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="about-editorial-content reveal-right">
+          <div class="about-brand-header">
+            <span class="about-pre-title">Kişisel Marka & Danışmanlık</span>
+            <div class="about-title-group">
+              <h2 class="about-editorial-title"><%= about.title %></h2>
+            </div>
+            <p class="about-editorial-subtitle"><%= about.subtitle %></p>
+            <div class="about-title-underline-new"></div>
+          </div>
+          <div class="about-description-group">
+            <p class="about-editorial-text about-lead-paragraph"><%= about.description[0] %></p>
+            <% for (let i = 1; i < about.description.length; i++) { %>
+            <p class="about-editorial-text"><%= about.description[i] %></p>
+            <% } %>
+          </div>
+          <blockquote class="about-quote">
+            <svg class="about-quote-mark" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M3 21c3 0 7-1 7-8V5c0-1.25-.756-2.017-2-2H4c-1.25 0-2 .75-2 1.972V11c0 1.25.75 2 2 2 1 0 1 0 1 1v1c0 1-1 2-2 2s-1 .008-1 1.031V20c0 1 0 1 1 1z"></path>
+              <path d="M15 21c3 0 7-1 7-8V5c0-1.25-.757-2.017-2-2h-4c-1.25 0-2 .75-2 1.972V11c0 1.25.75 2 2 2h.75c0 2.25.25 4-2.75 4v3c0 1 0 1 1 1z"></path>
+            </svg>
+            <div class="about-quote-text">
+              <p>Sağlıklı beslenme, katı kurallardan çok sürdürülebilir alışkanlıklarla güçlenir.</p>
+            </div>
+          </blockquote>
+          <div class="about-pills-section">
+            <span class="about-pills-title">Hizmet Alanları</span>
+            <div class="about-expertise-new">
+              <% about.expertise.forEach(function(exp, idx) { %>
+              <span class="expertise-pill-new pill-theme-<%= idx % 4 %>">
+                <span class="pill-dot"></span>
+                <%= exp %>
+              </span>
+              <% }); %>
+            </div>
+          </div>
+          <div class="about-editorial-actions">
+            <a href="/iletisim" class="about-luxury-cta">
+              <span>Randevu Alın</span>
+              <span class="cta-arrow"><i data-lucide="arrow-right" style="width:16px;height:16px;"></i></span>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="about-stats-strip reveal-up">
+        <div class="stats-strip-bg"></div>
+        <div class="stats-strip-grid">
+          <% about.stats.forEach(function(stat, idx) { %>
+          <div class="stat-strip-item theme-color-<%= idx %>">
+            <div class="stat-strip-glow"></div>
+            <div class="stat-strip-icon-wrap">
+              <% if (idx === 0) { %><i data-lucide="user-check" style="width:24px;height:24px;"></i><% } %>
+              <% if (idx === 1) { %><i data-lucide="monitor" style="width:24px;height:24px;"></i><% } %>
+              <% if (idx === 2) { %><i data-lucide="refresh-cw" style="width:24px;height:24px;"></i><% } %>
+              <% if (idx === 3) { %><i data-lucide="leaf" style="width:24px;height:24px;"></i><% } %>
+            </div>
+            <div class="stat-strip-text">
+              <span class="stat-strip-number"><%= stat.number %></span>
+              <span class="stat-strip-label"><%= stat.label %></span>
+            </div>
+          </div>
+          <% }); %>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== 3. DANIŞMANLIK YAKLAŞIMIMIZ ===== -->
+  <section class="about-approach section bg-light" id="aboutApproach">
+    <div class="container">
+      <div class="section-header center reveal-up">
+        <span class="section-tag" style="background:var(--color-sky-light);color:var(--color-sky-dark);border-color:rgba(79,148,165,0.10);">
+          <span style="width:6px;height:6px;border-radius:50%;background:var(--color-sky);box-shadow:0 0 6px rgba(79,148,165,0.4);flex-shrink:0;"></span>
+          DANIŞMANLIK YAKLAŞIMIMIZ
+        </span>
+        <h2 class="section-title">Size Özel Bir <span style="color:var(--accent)">Danışmanlık Süreci</span></h2>
+        <p class="section-subtitle">Her danışanın ihtiyaçları, hedefleri ve yaşam düzeni farklıdır. Bu nedenle süreci birlikte planlıyor, adım adım ilerliyoruz.</p>
+      </div>
+      <div class="approach-grid">
+        <div class="approach-card reveal-up">
+          <div class="approach-icon ai-personal"><i data-lucide="user-check" style="width:24px;height:24px;"></i></div>
+          <h3>Kişiye Özel Değerlendirme</h3>
+          <p>Her danışanın ihtiyaçları, hedefleri ve yaşam düzeni dikkate alınarak kişiye özel bir süreç planlanır.</p>
+        </div>
+        <div class="approach-card reveal-up">
+          <div class="approach-icon ai-science"><i data-lucide="target" style="width:24px;height:24px;"></i></div>
+          <h3>Hedef Odaklı Planlama</h3>
+          <p>Belirlenen hedefler doğrultusunda uygulanabilir, net ve dengeli bir beslenme düzeni oluşturulur.</p>
+        </div>
+        <div class="approach-card reveal-up">
+          <div class="approach-icon ai-track"><i data-lucide="calendar-check" style="width:24px;height:24px;"></i></div>
+          <h3>Düzenli Takip</h3>
+          <p>Süreç boyunca danışanın ilerleyişi değerlendirilir, motivasyon desteği sağlanır ve plan güncellenir.</p>
+        </div>
+        <div class="approach-card reveal-up">
+          <div class="approach-icon ai-habit"><i data-lucide="refresh-cw" style="width:24px;height:24px;"></i></div>
+          <h3>Sürdürülebilir Alışkanlıklar</h3>
+          <p>Kısa süreli çözümler yerine günlük yaşama entegre olabilen kalıcı alışkanlıklar kazandırılması hedeflenir.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== 4. END CTA ===== -->
+  <section class="cta-banner">
+    <div class="cta-particles"></div>
+    <div class="container">
+      <div class="cta-content">
+        <h2 class="reveal-up">Sağlıklı beslenme yolculuğunuza <span style="color:var(--accent)">birlikte başlayalım.</span></h2>
+        <p class="reveal-up">Kısa bir ön görüşme ile hedeflerinize ve yaşam düzeninize en uygun danışmanlık modelini birlikte netleştirebiliriz.</p>
+        <div class="cta-actions reveal-up">
+          <a href="/iletisim" class="btn btn-primary btn-lg"><span>Randevu Al</span></a>
+          <a href="https://wa.me/<%= site.phone.replace(/[^0-9]/g, '') %>?text=Merhaba%2C%20beslenme%20dan%C4%B1%C5%9Fmanl%C4%B1%C4%9F%C4%B1%20hakk%C4%B1nda%20bilgi%20almak%20istiyorum." class="btn btn-outline btn-lg" target="_blank" rel="noopener" style="background:rgba(255,255,255,0.08);border-color:rgba(255,255,255,0.18);color:#fff;">
+            <i data-lucide="message-circle" style="width:16px;height:16px;"></i>
+            <span>WhatsApp'tan Yaz</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<%- include('partials/footer') %>

@@ -1,0 +1,210 @@
+<%- include('partials/header') %>
+<%- include('partials/navbar') %>
+
+<main>
+  <!-- ===== DETAIL HERO ===== -->
+  <section class="detail-hero">
+    <div class="detail-hero-bg"></div>
+    <div class="detail-hero-pattern" aria-hidden="true"></div>
+    <div class="detail-hero-glow" aria-hidden="true"></div>
+    <div class="container">
+      <div class="detail-hero-wrapper">
+        <div class="detail-hero-content">
+          <div class="breadcrumb">
+            <a href="/">Ana Sayfa</a>
+            <span class="breadcrumb-sep"><i data-lucide="chevron-right" style="width:12px;height:12px;"></i></span>
+            <a href="/hizmetler">Hizmetler</a>
+            <span class="breadcrumb-sep"><i data-lucide="chevron-right" style="width:12px;height:12px;"></i></span>
+            <span><%= service.title %></span>
+          </div>
+          <span class="detail-hero-badge">
+            <span class="badge-dot"></span>
+            BESLENME DANIŞMANLIĞI
+          </span>
+          <h1 class="detail-hero-title"><%= service.title %></h1>
+          <p class="detail-hero-desc"><%= service.shortDescription %></p>
+          <div class="detail-hero-actions">
+            <a href="/iletisim" class="btn btn-primary btn-lg"><span>Randevu Al</span></a>
+            <a href="https://wa.me/<%= site.phone.replace(/[^0-9]/g, '') %>?text=Merhaba%2C%20beslenme%20dan%C4%B1%C5%9Fmanl%C4%B1%C4%9F%C4%B1%20hakk%C4%B1nda%20bilgi%20almak%20istiyorum." class="btn btn-outline btn-lg" target="_blank" rel="noopener" style="background:rgba(255,255,255,0.08);border-color:rgba(255,255,255,0.18);color:#fff;">
+              <i data-lucide="message-circle" style="width:16px;height:16px;"></i>
+              <span>WhatsApp'tan Yaz</span>
+            </a>
+          </div>
+        </div>
+        <div class="detail-hero-visual">
+          <div class="detail-hero-image-card">
+            <% if (service.detailImage) { %>
+            <img src="<%= service.detailImage %>" alt="<%= service.title %>" loading="lazy">
+            <% } else { %>
+            <div class="detail-hero-fallback">
+              <i data-lucide="<%= service.icon %>" style="width:48px;height:48px;"></i>
+            </div>
+            <% } %>
+            <div class="detail-hero-image-overlay"></div>
+            <div class="detail-hero-image-shine"></div>
+            <div class="detail-hero-image-ring"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SUITABLE FOR ===== -->
+  <% if (service.suitableFor && service.suitableFor.length > 0) { %>
+  <section class="detail-suitable section" id="detailSuitable">
+    <div class="container">
+      <div class="section-header center reveal-up">
+        <span class="section-tag" style="background:var(--color-sky-light);color:var(--color-sky-dark);border-color:rgba(79,148,165,0.10);">
+          <span style="width:6px;height:6px;border-radius:50%;background:var(--color-sky);box-shadow:0 0 6px rgba(79,148,165,0.4);flex-shrink:0;"></span>
+          KİMLER İÇİN UYGUN?
+        </span>
+        <h2 class="section-title">Bu Program <span style="color:var(--accent)">Kimler İçin Uygun?</span></h2>
+        <p class="section-subtitle"><%= service.title %> programımız, aşağıdaki ihtiyaç ve hedeflere sahip danışanlarımız için özel olarak tasarlanmıştır.</p>
+      </div>
+      <div class="suitable-grid">
+        <% service.suitableFor.forEach(function(item) { %>
+        <div class="suitable-card reveal-up">
+          <div class="suitable-icon"><i data-lucide="check-circle" style="width:20px;height:20px;"></i></div>
+          <span><%= item %></span>
+        </div>
+        <% }); %>
+      </div>
+    </div>
+  </section>
+  <% } %>
+
+  <!-- ===== PROCESS ===== -->
+  <% if (service.processSteps && service.processSteps.length > 0) { %>
+  <section class="detail-process section bg-light" id="detailProcess">
+    <div class="container">
+      <div class="section-header center reveal-up">
+        <span class="section-tag" style="background:var(--color-coral-light);color:var(--color-coral-dark);border-color:rgba(217,108,95,0.10);">
+          <span style="width:6px;height:6px;border-radius:50%;background:var(--color-coral);box-shadow:0 0 6px rgba(217,108,95,0.4);flex-shrink:0;"></span>
+          DANIŞMANLIK SÜRECİ
+        </span>
+        <h2 class="section-title">Danışmanlık Sürecinde <span style="color:var(--accent)">Neler Yapıyoruz?</span></h2>
+        <p class="section-subtitle"><%= service.title %> programımızda sizi bekleyen adımları birlikte planlıyoruz.</p>
+      </div>
+      <div class="detail-process-track">
+        <div class="detail-process-line"><div class="detail-process-line-fill"></div></div>
+        <% service.processSteps.forEach(function(step, idx) { %>
+        <div class="detail-process-step reveal-up">
+          <div class="detail-process-card">
+            <div class="detail-process-num"><%= String(idx + 1).padStart(2, '0') %></div>
+            <h3><%= step.title %></h3>
+            <p><%= step.desc %></p>
+          </div>
+        </div>
+        <% }); %>
+      </div>
+    </div>
+  </section>
+  <% } %>
+
+  <!-- ===== BENEFITS ===== -->
+  <% if (service.benefits && service.benefits.length > 0) { %>
+  <section class="detail-benefits section" id="detailBenefits">
+    <div class="container">
+      <div class="section-header center reveal-up">
+        <span class="section-tag" style="background:var(--color-amber-light);color:var(--color-amber-dark);border-color:rgba(217,138,95,0.10);">
+          <span style="width:6px;height:6px;border-radius:50%;background:var(--color-amber);box-shadow:0 0 6px rgba(217,138,95,0.4);flex-shrink:0;"></span>
+          KAZANIMLAR
+        </span>
+        <h2 class="section-title">Bu Hizmette <span style="color:var(--accent)">Neler Kazanırsınız?</span></h2>
+        <p class="section-subtitle"><%= service.title %> programı ile sağlıklı beslenme yolculuğunuzda önemli kazanımlar elde edersiniz.</p>
+      </div>
+      <div class="benefits-grid">
+        <% service.benefits.forEach(function(benefit) { %>
+        <div class="benefit-card reveal-up">
+          <div class="benefit-check"><i data-lucide="check" style="width:18px;height:18px;"></i></div>
+          <span><%= benefit %></span>
+        </div>
+        <% }); %>
+      </div>
+    </div>
+  </section>
+  <% } %>
+
+  <!-- ===== FAQ ===== -->
+  <% if (service.faqs && service.faqs.length > 0) { %>
+  <section class="detail-faq section bg-light" id="detailFaq">
+    <div class="container">
+      <div class="faq-wrapper">
+        <div class="faq-left reveal-left">
+          <span class="section-tag" style="background:var(--color-sage-light);color:var(--color-sage-dark);border-color:rgba(79,122,94,0.10);">
+            <span style="width:6px;height:6px;border-radius:50%;background:var(--color-sage);box-shadow:0 0 6px rgba(79,122,94,0.4);flex-shrink:0;"></span>
+            SSS
+          </span>
+          <h2 class="section-title gradient-text"><%= service.title %><br>Hakkında Sık Sorulan Sorular</h2>
+          <p class="section-subtitle"><%= service.title %> programımız hakkında en çok merak edilenleri uzmanımız yanıtlıyor.</p>
+          <div class="faq-cta">
+            <p>Sormak istediğiniz başka bir şey varsa, ücretsiz ön görüşme randevusu alabilirsiniz.</p>
+            <a href="/iletisim" class="btn btn-primary"><span>Hemen Sorun</span></a>
+          </div>
+        </div>
+        <div class="faq-right reveal-right">
+          <% service.faqs.forEach(function(item, i) { %>
+          <div class="faq-item <%= i === 0 ? 'active' : '' %>">
+            <div class="faq-question">
+              <span><%= item.question %></span>
+              <i data-lucide="chevron-down" style="width:16px;height:16px;"></i>
+            </div>
+            <div class="faq-answer">
+              <p><%= item.answer %></p>
+            </div>
+          </div>
+          <% }); %>
+        </div>
+      </div>
+    </div>
+  </section>
+  <% } %>
+
+  <!-- ===== RELATED SERVICES ===== -->
+  <% if (relatedServices && relatedServices.length > 0) { %>
+  <section class="detail-related section" id="detailRelated">
+    <div class="container">
+      <div class="section-header center reveal-up">
+        <span class="section-tag">DİĞER HİZMETLER</span>
+        <h2 class="section-title">Diğer Hizmetleri <span style="color:var(--accent)">Keşfedin</span></h2>
+        <p class="section-subtitle">Size özel beslenme çözümlerimizi keşfetmeye devam edin.</p>
+      </div>
+      <div class="services-grid services-grid-premium">
+        <% relatedServices.forEach(function(rel, idx) { %>
+        <div class="service-card-premium reveal-up">
+          <div class="service-card-glow"></div>
+          <div class="service-card-premium-header">
+            <div class="service-card-premium-icon theme-accent-<%= idx % 4 %>">
+              <i data-lucide="<%= rel.icon %>" style="width:26px;height:26px;"></i>
+            </div>
+            <span class="service-card-premium-num"><%= String(idx + 1).padStart(2, '0') %></span>
+          </div>
+          <div class="service-card-premium-body">
+            <h3 class="service-card-premium-title"><%= rel.title %></h3>
+            <p class="service-card-premium-desc"><%= rel.shortDescription || rel.description %></p>
+            <a href="/hizmetler/<%= rel.slug %>" class="service-premium-link">
+              <span>Detaylı Bilgi</span>
+              <i data-lucide="arrow-right" style="width:14px;height:14px;"></i>
+            </a>
+          </div>
+        </div>
+        <% }); %>
+      </div>
+    </div>
+  </section>
+  <% } %>
+
+  <!-- ===== END CTA ===== -->
+  <section class="cta-banner">
+    <div class="cta-particles"></div>
+    <div class="container">
+      <div class="cta-content">
+        <h2 class="reveal-up">Hedeflerinize uygun beslenme desteği için <span style="color:var(--accent)">ilk adımı birlikte atalım.</span></h2>
+        <p class="reveal-up">Ücretsiz ön görüşme ile size en uygun danışmanlık modelini belirleyelim.</p>
+        <a href="/iletisim" class="btn btn-primary btn-lg reveal-up"><span>Randevu Al</span></a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<%- include('partials/footer') %>

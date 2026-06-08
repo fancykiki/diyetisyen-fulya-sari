@@ -1,0 +1,424 @@
+{
+  "site": {
+    "title": "Diyetisyen Fulya Sarı",
+    "subtitle": "Sağlıklı Yaşam ve Diyet Danışmanlığı",
+    "description": "Profesyonel Beslenme ve Diyet Danışmanlığı",
+    "phone": "+90 549 503 07 94",
+    "email": "info@diyetisyenfulyasari.com",
+    "address": "Açelya Apt, Meltem, Meltem Blv. Özlem Sitesi B1 blok, 07040 Muratpaşa/Antalya, Türkiye",
+    "workingHours": "Hafta İçi: 09:00 - 19:00 | Cumartesi: 10:00 - 16:00"
+  },
+  "faq": [
+    {
+      "question": "Diyet yaparken aç kalmam gerekiyor mu?",
+      "answer": "Kesinlikle hayır! Sağlıklı bir diyet programında aç kalmak yoktur. Aksine, doğru besinleri doğru zamanlarda tüketerek hem tok kalır hem de kilo verirsiniz. Aç kalmak metabolizmayı yavaşlatır ve uzun vadede kilo alımına neden olur."
+    },
+    {
+      "question": "Sonuçları ne zaman görmeye başlarım?",
+      "answer": "İlk haftadan itibaren değişimi hissedersiniz. Ancak görsel sonuçlar genellikle 2-3 hafta içinde belirginleşir. Sağlıklı kilo kaybı haftada 0.5-1 kg arasıdır ve kalıcı sonuçlar için sabır önemlidir."
+    },
+    {
+      "question": "Online danışmanlık hizmeti veriyor musunuz?",
+      "answer": "Evet, hem yüz yüze hem de online danışmanlık hizmeti veriyorum. Online programlarda size özel beslenme planı, haftalık kontroller ve WhatsApp ile destek sağlıyorum."
+    },
+    {
+      "question": "Diyet programı kişiye özel mi hazırlanıyor?",
+      "answer": "Kesinlikle. Her danışanımın metabolizması, sağlık durumu, yaşam tarzı ve hedefleri farklıdır. Bu nedenle her programa sıfırdan, kişiye özel olarak hazırlıyorum. Hazır diyet listeleri kullanmıyorum."
+    }
+  ],
+  "trustBadges": [
+    { "icon": "user-check", "label": "Kişiye Özel Program" },
+    { "icon": "laptop", "label": "Online Danışmanlık" },
+    { "icon": "activity", "label": "Vücut Analizi" },
+    { "icon": "weight", "label": "Kilo Yönetimi" },
+    { "icon": "baby", "label": "Gebelik Beslenmesi" },
+    { "icon": "dumbbell", "label": "Sporcu Beslenmesi" },
+    { "icon": "heart-pulse", "label": "Hastalıkta Beslenme" },
+    { "icon": "message-circle", "label": "Takip & Motivasyon" },
+    { "icon": "award", "label": "Bilimsel Yaklaşım" },
+    { "icon": "leaf", "label": "Sürdürülebilir Beslenme" }
+  ],
+  "slider": [
+    {
+      "tag": "Diyetisyen Fulya Sarı",
+      "title": "Sağlıklı Yaşam İçin Doğru Adım",
+      "subtitle": "Size özel beslenme planlarıyla enerjinizi, alışkanlıklarınızı ve yaşam kalitenizi birlikte güçlendirelim.",
+      "image": "https://images.unsplash.com/photo-1498837167922-ddd27525d352?w=1920&q=90&auto=format&fit=crop",
+      "ctaText": "Randevu Al",
+      "ctaLink": "/iletisim",
+      "ctaSecondaryText": "Programları İncele",
+      "ctaSecondaryLink": "/hizmetler",
+      "features": [
+        { "icon": "apple", "label": "Sağlıklı Beslenme", "color": "emerald" },
+        { "icon": "clipboard-list", "label": "Kişisel Diyet Planı", "color": "sage" },
+        { "icon": "laptop", "label": "Online Danışmanlık", "color": "amber" }
+      ]
+    },
+    {
+      "tag": "Kişiye Özel Beslenme",
+      "title": "Kendiniz İçin En Sağlıklı Yatırımı Yapın",
+      "subtitle": "Günlük yaşamınıza uyum sağlayan sürdürülebilir programlarla hedeflerinize daha net ve güvenli ilerleyin.",
+      "image": "https://images.unsplash.com/photo-1542838132-92c53300491e?w=1920&q=90&auto=format&fit=crop",
+      "ctaText": "Randevu Al",
+      "ctaLink": "/iletisim",
+      "ctaSecondaryText": "Programları İncele",
+      "ctaSecondaryLink": "/hizmetler",
+      "features": [
+        { "icon": "laptop", "label": "Online Danışmanlık", "color": "amber" },
+        { "icon": "calendar", "label": "Öğün Planlaması", "color": "sage" },
+        { "icon": "heart-pulse", "label": "Takip ve Destek", "color": "emerald" }
+      ]
+    },
+    {
+      "tag": "Dengeli Yaşam Programı",
+      "title": "Dengeli Beslenme ile Gücünüzü Keşfedin",
+      "subtitle": "Kilo yönetimi, metabolizma desteği ve uzman takibiyle daha dengeli bir yaşam düzeni oluşturun.",
+      "image": "https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=1920&q=90&auto=format&fit=crop",
+      "ctaText": "Randevu Al",
+      "ctaLink": "/iletisim",
+      "ctaSecondaryText": "Programları İncele",
+      "ctaSecondaryLink": "/hizmetler",
+      "features": [
+        { "icon": "scale", "label": "Kilo Kontrolü", "color": "emerald" },
+        { "icon": "utensils-crossed", "label": "Öğün Planlaması", "color": "sage" },
+        { "icon": "user-check", "label": "Uzman Takibi", "color": "amber" }
+      ]
+    }
+  ],
+  "services": [
+    {
+      "slug": "noroendokrin-beslenme",
+      "icon": "brain",
+      "title": "Nöroendokrin Beslenme",
+      "shortDescription": "Beyin-bağırsak-hormon bağlantısını temel alan bilimsel beslenme yaklaşımı ile metabolik sorunlarınızın kök nedenine iniyoruz.",
+      "description": "Beyin-bağırsak-hormon ekseninde çalışarak metabolik sorunlarınızın kök nedenine iniyor, size özel bilimsel bir beslenme planı oluşturuyorum.",
+      "image": "https://images.unsplash.com/photo-1559757175-5700dde675bc?w=800&q=90&auto=format&fit=crop",
+      "detailImage": "https://images.unsplash.com/photo-1559757175-5700dde675bc?w=1200&q=90&auto=format&fit=crop",
+      "metaTitle": "Nöroendokrin Beslenme | Diyetisyen Fulya Sarı",
+      "metaDescription": "Nöroendokrin beslenme danışmanlığı ile beyin-bağırsak-hormon ekseninde metabolik sorunlarınıza özel bilimsel beslenme planı. Antalya'da nöroendokrin diyetisyen.",
+      "benefits": [
+        "Sürdürülebilir beslenme alışkanlığı kazanırsınız",
+        "Hormonal dengeniz desteklenir",
+        "Metabolizmanızın kök nedenleri ele alınır",
+        "Kişiye özel takip ve planlama",
+        "Daha dengeli bir yaşam düzeni oluşur",
+        "Bilinçli besin seçimleri yapma becerisi gelişir"
+      ],
+      "suitableFor": [
+        "İnsülin direnci ve metabolik sendromu olanlar",
+        "Tiroid hastalıkları (hipotiroid, Haşimato) yaşayanlar",
+        "Polikistik over sendromu (PCOS) olanlar",
+        "Kronik yorgunluk ve tükenmişlik hissedenler",
+        "Adet düzensizliği ve menopoz dönemindekiler",
+        "Kilo vermekte zorlanan ve metabolizmasını tanımak isteyenler"
+      ],
+      "processSteps": [
+        { "title": "Ön Görüşme", "desc": "Sağlık geçmişiniz, şikayetleriniz ve hedeflerinizi dinliyor, kapsamlı bir değerlendirme yapıyoruz." },
+        { "title": "Detaylı Analiz", "desc": "Vücut kompozisyonu ölçümü, kan bulgularınız ve yaşam tarzınız birlikte değerlendiriliyor." },
+        { "title": "Kişiye Özel Plan", "desc": "Nöroendokrin yaklaşımla size özel, bilimsel temelli beslenme programı hazırlanıyor." },
+        { "title": "Takip ve Güncelleme", "desc": "Haftalık kontrollerle ilerlemeniz değerlendiriliyor, program ihtiyaca göre güncelleniyor." }
+      ],
+      "faqs": [
+        { "question": "Nöroendokrin beslenme nedir?", "answer": "Nöroendokrin beslenme; sinir sistemi, hormonlar ve bağırsak sağlığı arasındaki ilişkiyi temel alan bilimsel bir yaklaşımdır. Kilo verememe, iştah kontrolü, kronik yorgunluk gibi durumların kök nedenlerine inmeyi hedefler." },
+        { "question": "Hangi rahatsızlıklarda etkilidir?", "answer": "İnsülin direnci, tiroid hastalıkları, PCOS, metabolik sendrom, kronik yorgunluk, adet düzensizlikleri ve menopoz döneminde destekleyici olarak uygulanır." },
+        { "question": "Ne kadar sürede sonuç alabilirim?", "answer": "Kişiye göre değişmekle birlikte, ilk 2-3 haftada enerji seviyenizde ve iştah kontrolünüzde olumlu değişimler hissedersiniz. Kalıcı sonuçlar için düzenli takip önemlidir." }
+      ]
+    },
+    {
+      "slug": "duygusal-yeme-danismanligi",
+      "icon": "heart",
+      "title": "Duygusal Yeme Danışmanlığı",
+      "shortDescription": "Stres, kaygı ve can sıkıntısına bağlı yeme ataklarınızı kontrol altına alın. Duygusal yeme döngüsünü kırarak beslenme alışkanlıklarınızı dönüştürün.",
+      "description": "Stres, üzüntü, kaygı ve can sıkıntısına bağlı yeme ataklarınızı kontrol altına alın. Duygusal yeme döngüsünü kırarak yemeğe bakış açınızı değiştirin.",
+      "image": "https://images.unsplash.com/photo-1499209974431-9dddcece7f88?w=800&q=90&auto=format&fit=crop",
+      "detailImage": "https://images.unsplash.com/photo-1499209974431-9dddcece7f88?w=1200&q=90&auto=format&fit=crop",
+      "metaTitle": "Duygusal Yeme Danışmanlığı | Diyetisyen Fulya Sarı",
+      "metaDescription": "Duygusal yeme bozukluğu danışmanlığı ile stres, kaygı ve üzüntüye bağlı yeme ataklarınızı kontrol altına alın. Antalya'da duygusal yeme terapisi ve beslenme desteği.",
+      "benefits": [
+        "Yeme ataklarınızın tetikleyicilerini tanırsınız",
+        "Duygusal yeme döngüsünden çıkış stratejileri geliştirirsiniz",
+        "Yemekle ilişkiniz dönüşür",
+        "Bilinçli beslenme alışkanlığı kazanırsınız",
+        "Stres yönetimi becerileriniz artar",
+        "Kilo kontrolü kolaylaşır"
+      ],
+      "suitableFor": [
+        "Stres ve üzüntü anlarında yemek yiyenler",
+        "Can sıkıntısına bağlı sürekli atıştıranlar",
+        "Duygusal boşluk hissini yemekle dolduranlar",
+        "Gece yeme atakları yaşayanlar",
+        "Diyet yaparken duygusal dalgalanmalar yaşayanlar",
+        "Yeme davranışlarını anlamak ve dönüştürmek isteyenler"
+      ],
+      "processSteps": [
+        { "title": "Değerlendirme", "desc": "Yeme alışkanlıklarınız, duygusal tetikleyicileriniz ve yaşam düzeniniz detaylı olarak inceleniyor." },
+        { "title": "Farkındalık", "desc": "Duygusal yeme döngüsünü tanıyor, tetikleyicilerinizi fark etmeye başlıyorsunuz." },
+        { "title": "Strateji Geliştirme", "desc": "Size özel başa çıkma stratejileri ve alternatif davranış kalıpları oluşturuyoruz." },
+        { "title": "Sürdürülebilir Değişim", "desc": "Düzenli takip ve destekle yeni alışkanlıklarınızı kalıcı hale getiriyoruz." }
+      ],
+      "faqs": [
+        { "question": "Duygusal yeme nedir?", "answer": "Duygusal yeme; açlık dışında stres, üzüntü, kaygı, can sıkıntısı gibi duygusal tetikleyicilerle yeme davranışıdır. Genellikle anlık rahatlama sağlasa da uzun vadede suçluluk ve kilo artışına neden olur." },
+        { "question": "Duygusal yeme nasıl kontrol altına alınır?", "answer": "Öncelikle tetikleyicilerinizi tanımak önemlidir. Daha sonra size özel geliştirilen farkındalık ve başa çıkma stratejileriyle yeme ataklarınızı kontrol altına alabilirsiniz." },
+        { "question": "Duygusal yeme danışmanlığı ne kadar sürer?", "answer": "Kişiye göre değişmekle birlikte, genellikle 8-12 haftalık bir süreçte kalıcı davranış değişikliği hedeflenir." },
+        { "question": "Duygusal yeme ve kilo alımı arasında ilişki var mı?", "answer": "Evet, duygusal yeme atakları sıklıkla yüksek kalorili besinlere yönelmeye neden olur. Bu durum kontrol altına alındığında kilo yönetimi de kolaylaşır." }
+      ]
+    },
+    {
+      "slug": "hormonal-denge-programlari",
+      "icon": "leaf",
+      "title": "Hormonal Denge Programları",
+      "shortDescription": "PCOS, tiroid, insülin direnci, menopoz ve adet düzensizliklerinde hormonal dengeyi sağlamaya yönelik özel beslenme tedavileri.",
+      "description": "PCOS (Polikistik Over), tiroid hastalıkları, insülin direnci, menopoz ve adet düzensizliklerinde hormonal dengeyi sağlamaya yönelik özel beslenme tedavileri.",
+      "image": "https://images.unsplash.com/photo-1555252333-9f8e92f65aaa?w=800&q=90&auto=format&fit=crop",
+      "detailImage": "https://images.unsplash.com/photo-1555252333-9f8e92f65aaa?w=1200&q=90&auto=format&fit=crop",
+      "metaTitle": "Hormonal Denge Programları | Diyetisyen Fulya Sarı",
+      "metaDescription": "Hormonal denge beslenme programları ile PCOS, tiroid, insülin direnci ve menopoz döneminde kişiye özel beslenme danışmanlığı. Antalya'da hormonal denge diyetisyeni.",
+      "benefits": [
+        "Hormonal dengeniz beslenme ile desteklenir",
+        "Adet düzeni ve semptomlarınız iyileşir",
+        "İnsülin direnci yönetimi kolaylaşır",
+        "Tiroid fonksiyonlarınız desteklenir",
+        "Enerji seviyeniz artar",
+        "Kilo yönetimi daha ulaşılabilir hale gelir"
+      ],
+      "suitableFor": [
+        "Polikistik over sendromu (PCOS) olanlar",
+        "Tiroid hastalığı (hipotiroid, Haşimato) yaşayanlar",
+        "İnsülin direnci ve prediyabeti olanlar",
+        "Menopoz döneminde beslenme desteği arayanlar",
+        "Adet düzensizliği ve PMS şikayeti olanlar",
+        "Hormonal nedenlerle kilo veremeyenler"
+      ],
+      "processSteps": [
+        { "title": "Hormonal Değerlendirme", "desc": "Kan bulgularınız, semptomlarınız ve sağlık geçmişiniz kapsamlı olarak inceleniyor." },
+        { "title": "Kişiye Özel Plan", "desc": "Hormonal durumunuza göre özel beslenme stratejileri ve öğün düzeni oluşturuluyor." },
+        { "title": "Yaşam Tarzı Entegrasyonu", "desc": "Beslenmeyle birlikte uyku, stres yönetimi ve fiziksel aktivite planı hazırlanıyor." },
+        { "title": "Düzenli Takip", "desc": "Haftalık kontrollerle süreç değerlendiriliyor, program güncelleniyor." }
+      ],
+      "faqs": [
+        { "question": "Hormonal denge beslenme ile sağlanabilir mi?", "answer": "Beslenme, hormonal denge üzerinde doğrudan etkilidir. Doğru besin seçimleri ve öğün düzeni ile hormonal semptomlar önemli ölçüde desteklenebilir." },
+        { "question": "PCOS'da beslenme nasıl olmalıdır?", "answer": "PCOS'da kan şekeri dengesi, inflamasyonu azaltma ve hormon metabolizmasını destekleyen bir beslenme modeli uygulanır. Kişiye özel planlama büyük önem taşır." },
+        { "question": "Tiroid hastaları nasıl beslenmeli?", "answer": "Tiroid fonksiyonlarını destekleyen besinler, anti-enflamatuar beslenme ve iyot/selenyum/çinko dengesi gözetilerek kişiye özel bir program hazırlanır." }
+      ]
+    },
+    {
+      "slug": "kilo-yonetimi",
+      "icon": "weight",
+      "title": "Kilo Yönetimi",
+      "shortDescription": "Bilimsel yöntemlerle sağlıklı kilo verme, kilo alma ve ideal kilonuzu koruma programları. Haftalık takip ve motivasyon desteği ile kalıcı sonuçlar.",
+      "description": "Bilimsel yöntemlerle sağlıklı kilo verme, kilo alma ve ideal kilonuzu koruma programları. Haftalık takip ve motivasyon desteği ile kalıcı sonuçlar.",
+      "image": "https://images.unsplash.com/photo-1532384748853-8f54a8f476e2?w=800&q=90&auto=format&fit=crop",
+      "detailImage": "https://images.unsplash.com/photo-1532384748853-8f54a8f476e2?w=1200&q=90&auto=format&fit=crop",
+      "metaTitle": "Kilo Yönetimi | Diyetisyen Fulya Sarı",
+      "metaDescription": "Sağlıklı kilo verme, kilo alma ve ideal kilonuzu koruma programları. Bilimsel yöntemlerle kişiye özel kilo yönetimi. Antalya'da kilo kontrolü diyetisyeni.",
+      "benefits": [
+        "Sağlıklı ve kalıcı kilo kaybı sağlanır",
+        "Aç kalmadan doğru beslenme alışkanlığı kazanılır",
+        "Metabolizma hızınız desteklenir",
+        "Haftalık takip ve motivasyon desteği",
+        "Vücut kompozisyonunuz iyileşir",
+        "İdeal kilonuzu koruma stratejileri gelişir"
+      ],
+      "suitableFor": [
+        "Fazla kilolarından sağlıklı şekilde kurtulmak isteyenler",
+        "Kilo vermekte zorlanan ve metabolizmasını hızlandırmak isteyenler",
+        "Daha önce diyet yapıp kalıcı sonuç alamayanlar",
+        "Kilo almak ve sağlıklı vücut yapısına kavuşmak isteyenler",
+        "Hamilelik sonrası kilo vermek isteyenler",
+        "İdeal kilosunu korumak için destek arayanlar"
+      ],
+      "processSteps": [
+        { "title": "Ön Görüşme ve Analiz", "desc": "Vücut kompozisyonu ölçümü, sağlık geçmişi ve hedefleriniz değerlendiriliyor." },
+        { "title": "Kişiye Özel Program", "desc": "Yaşam tarzınıza uygun, sürdürülebilir bir beslenme planı oluşturuluyor." },
+        { "title": "Haftalık Takip", "desc": "Her hafta ilerlemeniz değerlendiriliyor, motivasyon desteği sağlanıyor." },
+        { "title": "Koruma ve Sürdürülebilirlik", "desc": "Hedef kilonuza ulaştıktan sonra koruma stratejileri ile kalıcı sonuç hedefleniyor." }
+      ],
+      "faqs": [
+        { "question": "Haftada kaç kilo vermek sağlıklıdır?", "answer": "Sağlıklı kilo kaybı haftada 0.5-1 kg arasıdır. Hızlı kilo kaybı genellikle su ve kas kaybına neden olur, uzun vadede sürdürülebilir değildir." },
+        { "question": "Diyet yaparken aç kalmam gerekir mi?", "answer": "Kesinlikle hayır. Sağlıklı bir diyet programında aç kalmak yerine doğru besinleri doğru zamanlarda tüketerek hem tok kalır hem de kilo verirsiniz." },
+        { "question": "Kilo verdikten sonra geri alır mıyım?", "answer": "Programımızın koruma aşamasında kalıcı alışkanlıklar kazanmanız hedeflenir. Düzenli takip ve destekle kilo koruma başarınız artar." }
+      ]
+    },
+    {
+      "slug": "istah-kontrolu-ve-metabolizma-destegi",
+      "icon": "flame",
+      "title": "İştah Kontrolü ve Metabolizma Desteği",
+      "shortDescription": "Sürekli açlık hissi, tatlı krizleri ve metabolizma yavaşlamasına karşı özel stratejiler. İştah mekanizmanızı anlayarak kontrolü ele alın.",
+      "description": "Sürekli açlık hissi, tatlı krizleri ve metabolizma yavaşlamasına karşı özel stratejiler. İştah mekanizmanızı anlayarak kontrolü ele alın.",
+      "image": "https://images.unsplash.com/photo-1573879541250-58ae8b322b40?w=800&q=90&auto=format&fit=crop",
+      "detailImage": "https://images.unsplash.com/photo-1573879541250-58ae8b322b40?w=1200&q=90&auto=format&fit=crop",
+      "metaTitle": "İştah Kontrolü ve Metabolizma Desteği | Diyetisyen Fulya Sarı",
+      "metaDescription": "İştah kontrolü ve metabolizma desteği ile sürekli açlık hissi, tatlı krizleri ve yavaş metabolizmaya karşı kişiye özel beslenme stratejileri. Antalya'da iştah kontrolü diyetisyeni.",
+      "benefits": [
+        "İştah mekanizmanızı tanır ve kontrol edersiniz",
+        "Tatlı krizleri ve ataklar azalır",
+        "Metabolizma hızınız desteklenir",
+        "Kan şekeri dengeniz iyileşir",
+        "Daha uzun süre tok kalırsınız",
+        "Yeme davranışlarınız bilinçli hale gelir"
+      ],
+      "suitableFor": [
+        "Sürekli açlık hissi yaşayanlar",
+        "Tatlı krizlerini kontrol edemeyenler",
+        "Metabolizmasının yavaş olduğunu düşünenler",
+        "Kan şekeri dengesizlikleri olanlar",
+        "Doyma hissi yaşamakta zorlananlar",
+        "Sık sık atıştırma ihtiyacı duyanlar"
+      ],
+      "processSteps": [
+        { "title": "Değerlendirme", "desc": "İştah mekanizmanızı etkileyen faktörler, kan şekeri dengesi ve beslenme alışkanlıklarınız inceleniyor." },
+        { "title": "Strateji Belirleme", "desc": "Kan şekeri dengesini sağlayacak öğün düzeni ve besin seçimleri planlanıyor." },
+        { "title": "Kriz Yönetimi", "desc": "Ani açlık ve tatlı krizlerinde uygulayacağınız pratik stratejiler geliştiriliyor." },
+        { "title": "Metabolizma Desteği", "desc": "Metabolizma hızınızı destekleyecek beslenme ve yaşam tarzı önerileri sunuluyor." }
+      ],
+      "faqs": [
+        { "question": "Sürekli açlık hissi neden olur?", "answer": "Kan şekeri dengesizlikleri, yetersiz protein alımı, uyku düzensizliği, stres ve hormonal faktörler sürekli açlık hissine neden olabilir. Kök nedenin belirlenmesi için detaylı değerlendirme gerekir." },
+        { "question": "Tatlı krizleri nasıl kontrol altına alınır?", "answer": "Kan şekeri dengesini sağlayacak öğün düzeni, doğru besin seçimleri ve alternatif atıştırmalık stratejileri ile tatlı krizleri kontrol altına alınabilir." },
+        { "question": "Metabolizma hızlandırılabilir mi?", "answer": "Metabolizma hızı; beslenme düzeni, fiziksel aktivite, uyku kalitesi ve hormonal faktörlerden etkilenir. Doğru stratejilerle metabolizmanızı desteklemek mümkündür." }
+      ]
+    },
+    {
+      "slug": "online-beslenme-koclugu",
+      "icon": "laptop",
+      "title": "Online Beslenme Koçluğu",
+      "shortDescription": "Antalya dışı veya yoğun tempolu danışanlarım için online birebir görüşme, WhatsApp desteği ve dijital takip ile profesyonel beslenme danışmanlığı.",
+      "description": "Antalya dışı veya yoğun tempolu danışanlarım için online birebir görüşme, WhatsApp desteği ve dijital takip ile profesyonel beslenme danışmanlığı.",
+      "image": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=800&q=90&auto=format&fit=crop",
+      "detailImage": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=1200&q=90&auto=format&fit=crop",
+      "metaTitle": "Online Beslenme Koçluğu | Diyetisyen Fulya Sarı",
+      "metaDescription": "Online beslenme koçluğu ile Antalya dışı danışanlar için video görüşme, WhatsApp destek ve dijital takip. Online diyetisyen hizmeti ile sağlıklı beslenme programı.",
+      "benefits": [
+        "Dilediğiniz yerden profesyonel destek alırsınız",
+        "Esnek randevu saatleri ile zaman kaybı yaşamazsınız",
+        "Haftalık video görüşme ile birebir takip",
+        "WhatsApp üzerinden günlük destek",
+        "Dijital öğün planlaması ve takip",
+        "Yüz yüze hizmetle aynı kalitede danışmanlık"
+      ],
+      "suitableFor": [
+        "Antalya dışında yaşayanlar",
+        "Yoğun iş temposu olanlar",
+        "Seyahat eden ve düzenli ofis ziyareti yapamayanlar",
+        "Online destekle motive olmak isteyenler",
+        "Dijital takip ve planlamayı tercih edenler",
+        "Esnek saatlerde danışmanlık almak isteyenler"
+      ],
+      "processSteps": [
+        { "title": "Online Ön Görüşme", "desc": "Video görüşme ile sağlık geçmişiniz, hedefleriniz ve beklentileriniz değerlendiriliyor." },
+        { "title": "Dijital Planlama", "desc": "Size özel beslenme programı dijital ortamda hazırlanarak paylaşılıyor." },
+        { "title": "Haftalık Video Takip", "desc": "Her hafta belirlenen gün ve saatte video görüşme ile ilerleme değerlendiriliyor." },
+        { "title": "WhatsApp Destek", "desc": "Hafta içi WhatsApp üzerinden sorularınız yanıtlanıyor, motivasyon desteği sağlanıyor." }
+      ],
+      "faqs": [
+        { "question": "Online danışmanlık yüz yüze kadar etkili mi?", "answer": "Evet, online danışmanlıkta da aynı bilimsel yaklaşım ve kişiye özel planlama uygulanır. Haftalık video görüşme ve WhatsApp desteği ile süreç yakından takip edilir." },
+        { "question": "Online programda öğün planlaması nasıl yapılır?", "answer": "Size özel hazırlanan beslenme programı dijital olarak paylaşılır. Gerekli görüldüğünde güncellemeler yine dijital ortamda yapılır." },
+        { "question": "Online danışmanlık ücreti yüz yüze ile aynı mı?", "answer": "Online programlarımız yüz yüze hizmetle aynı kalite ve kapsamda olduğu için ücretlendirme de benzer şekilde yapılmaktadır." }
+      ]
+    },
+    {
+      "slug": "sporcu-beslenmesi",
+      "icon": "dumbbell",
+      "title": "Sporcu Beslenmesi",
+      "shortDescription": "Performans hedeflerinize uygun makro ve mikro besin planlaması, antrenman öncesi-sonrası beslenme ve vücut kompozisyonu yönetimi.",
+      "description": "Performans hedeflerinize uygun makro ve mikro besin planlaması ile antrenman öncesi-sonrası beslenme stratejileri. Spor dalınıza ve hedeflerinize özel beslenme programı.",
+      "image": "https://images.unsplash.com/photo-1540497077202-7c8a3999166f?w=800&q=90&auto=format&fit=crop",
+      "detailImage": "https://images.unsplash.com/photo-1540497077202-7c8a3999166f?w=1200&q=90&auto=format&fit=crop",
+      "metaTitle": "Sporcu Beslenmesi | Diyetisyen Fulya Sarı",
+      "metaDescription": "Sporcu beslenmesi danışmanlığı ile performans hedeflerinize uygun beslenme programı, antrenman öncesi-sonrası beslenme ve vücut kompozisyonu yönetimi. Antalya'da sporcu diyetisyeni.",
+      "benefits": [
+        "Performansınız beslenme ile desteklenir",
+        "Antrenman öncesi ve sonrası doğru beslenme stratejileri",
+        "Kas kazanımı ve yağ kaybı hedeflerinize uygun planlama",
+        "Spor dalınıza özel makro besin dengesi",
+        "Toparlanma süreciniz hızlanır",
+        "Sakatlık riskini azaltacak beslenme desteği"
+      ],
+      "suitableFor": [
+        "Amatör ve profesyonel sporcular",
+        "Kas kazanımı hedefleyenler",
+        "Yağ yakımı ve vücut kompozisyonu iyileştirmek isteyenler",
+        "Dayanıklılık sporlarıyla uğraşanlar",
+        "Müsabaka dönemi beslenmesi planlamak isteyenler",
+        "Spor performansını beslenme ile desteklemek isteyenler"
+      ],
+      "processSteps": [
+        { "title": "Performans Değerlendirmesi", "desc": "Spor dalınız, antrenman programınız ve vücut kompozisyonu hedefleriniz değerlendiriliyor." },
+        { "title": "Beslenme Planlaması", "desc": "Makro ve mikro besin ihtiyaçlarınız belirlenerek kişiye özel program hazırlanıyor." },
+        { "title": "Antrenmana Özel Strateji", "desc": "Antrenman öncesi, sırası ve sonrası için özel beslenme stratejileri oluşturuluyor." },
+        { "title": "Takip ve Optimizasyon", "desc": "Performans verilerinize göre beslenme planı düzenli olarak güncelleniyor." }
+      ],
+      "faqs": [
+        { "question": "Sporcu beslenmesi neden önemlidir?", "answer": "Yeterli ve doğru beslenme, spor performansınızı doğrudan etkiler. Antrenman öncesi, sırası ve sonrası doğru beslenme ile performansınızı artırabilir, toparlanma sürecinizi hızlandırabilirsiniz." },
+        { "question": "Kas kazanımı için nasıl beslenmeliyim?", "answer": "Yeterli protein alımı, doğru karbonhidrat zamanlaması ve kalori fazlası ile kas kazanımı desteklenir. Kişiye özel planlama büyük önem taşır." },
+        { "question": "Sporcu beslenmesi ile yağ yakımı mümkün mü?", "answer": "Evet, spor dalınıza ve hedeflerinize uygun planlanmış bir beslenme programı ile yağ kaybı hedeflerinize ulaşabilirsiniz." }
+      ]
+    }
+  ],
+  "process": [
+    {
+      "icon": "clipboard-list",
+      "title": "Ön Görüşme",
+      "desc": "Beslenme alışkanlıklarınızı, hedeflerinizi ve yaşam tarzınızı birlikte değerlendiriyoruz.",
+      "image": "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=600&q=90&auto=format&fit=crop"
+    },
+    {
+      "icon": "trending-up",
+      "title": "Vücut Analizi",
+      "desc": "Vücut kompozisyonunuzu analiz ederek ihtiyaçlarınıza uygun bir yol haritası çıkarıyoruz.",
+      "image": "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=600&q=90&auto=format&fit=crop"
+    },
+    {
+      "icon": "utensils",
+      "title": "Kişisel Program",
+      "desc": "Size özel, sürdürülebilir ve bilimsel temelli beslenme programınızı hazırlıyoruz.",
+      "image": "https://images.unsplash.com/photo-1490645935967-10de6ba17061?w=600&q=90&auto=format&fit=crop"
+    },
+    {
+      "icon": "heart",
+      "title": "Takip & Destek",
+      "desc": "Düzenli kontrollerle gelişiminizi takip ediyor, motivasyonunuzu yüksek tutuyoruz.",
+      "image": "https://images.unsplash.com/photo-1506126613408-eca07ce68773?w=600&q=90&auto=format&fit=crop"
+    }
+  ],
+  "testimonials": [
+    {
+      "name": "Zeynep K.",
+      "text": "3 ayda 12 kilo verdim. Sadece kilo vermekle kalmadım, sağlıklı beslenme alışkanlığı kazandım. Fulya Hanım'a çok teşekkür ederim.",
+      "rating": 5
+    },
+    {
+      "name": "Mehmet A.",
+      "text": "Diyabet tanısı sonrası başladığım beslenme programı sayesinde kan şekerim dengelendi. Profesyonel yaklaşım için minnettarım.",
+      "rating": 5
+    },
+    {
+      "name": "Elif Y.",
+      "text": "Nöroendokrin beslenme yaklaşımıyla hormonal dengemi kurmama yardımcı oldu. Hem kilo verdim hem de enerjim arttı. Herkese tavsiye ederim.",
+      "rating": 5
+    }
+  ],
+  "about": {
+    "title": "Dyt. Fulya Sarı",
+    "subtitle": "Antalya Diyetisyen | Sağlıklı Beslenme ve Diyet Danışmanlığı",
+    "image": "/images/fulya-sari.png",
+    "description": [
+      "Dyt. Fulya Sarı, Antalya'da sağlıklı beslenme, kilo yönetimi ve sürdürülebilir yaşam alışkanlıkları üzerine danışmanlık hizmeti sunan bir diyetisyendir. Danışanlarının hedeflerini, yaşam düzenini ve ihtiyaçlarını dikkate alarak kişiye özel, uygulanabilir ve dengeli beslenme yaklaşımları oluşturmayı hedefler.",
+      "Beslenme sürecinde amaç yalnızca kısa süreli sonuçlar elde etmek değil; kişinin günlük yaşamına uyum sağlayan, sürdürülebilir ve bilinçli alışkanlıklar kazanmasına destek olmaktır. Bu nedenle her danışmanlık süreci bireyin rutinleri, tercihleri, motivasyonu ve hedefleri doğrultusunda planlanır.",
+      "Antalya'da yüz yüze danışmanlık hizmetinin yanı sıra online beslenme danışmanlığı ile farklı şehirlerdeki danışanlara da ulaşılabilir. Kilo yönetimi, sağlıklı beslenme düzeni oluşturma, öğün planlama, motivasyon takibi ve yaşam tarzına uygun beslenme alışkanlıkları üzerine destek sunulur.",
+      "Dyt. Fulya Sarı'nın yaklaşımı; sade, anlaşılır, sürdürülebilir ve danışan odaklı bir beslenme süreci oluşturmaya dayanır. Her bireyin ihtiyacı farklı olduğu için süreç kişiye özel değerlendirilir ve hedeflere uygun şekilde ilerletilir."
+    ],
+    "expertise": [
+      "Sağlıklı Beslenme",
+      "Kilo Yönetimi",
+      "Online Danışmanlık",
+      "Öğün Planlama",
+      "Sürdürülebilir Alışkanlıklar"
+    ],
+    "stats": [
+      { "number": "Kişiye Özel", "label": "Yaşam düzeninize uygun beslenme yaklaşımı" },
+      { "number": "Online & Yüz Yüze", "label": "Antalya'da ve online danışmanlık seçeneği" },
+      { "number": "Sürdürülebilir Takip", "label": "Günlük yaşama uyum sağlayan süreç yönetimi" },
+      { "number": "Dengeli Beslenme", "label": "Kısıtlayıcı değil, uygulanabilir alışkanlıklar" }
+    ]
+  }
+}

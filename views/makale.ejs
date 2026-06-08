@@ -1,0 +1,116 @@
+<%- include('partials/header') %>
+<%- include('partials/navbar') %>
+
+<main>
+  <section class="page-hero page-hero-sm">
+    <div class="container">
+      <div class="page-hero-content">
+        <div class="breadcrumb">
+          <a href="/">Ana Sayfa</a> / <a href="/makaleler">Makaleler</a> / <span><%= makale.title.substring(0, 40) %>...</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="blog-detail section">
+    <div class="container">
+      <div class="blog-detail-layout">
+        <article class="blog-detail-main">
+          <div class="blog-detail-header">
+            <span class="blog-category"><%= makale.category %></span>
+            <h1 class="blog-detail-title"><%= makale.title %></h1>
+            <div class="blog-detail-meta">
+              <span><i data-lucide="user" style="width:14px;height:14px;"></i> <%= makale.author %></span>
+              <span><i data-lucide="calendar" style="width:14px;height:14px;"></i> <%= makale.date %></span>
+              <span><i data-lucide="clock" style="width:14px;height:14px;"></i> <%= makale.readTime %> dk okuma</span>
+            </div>
+          </div>
+
+          <div class="blog-detail-image">
+            <% if (makale.image && makale.image.startsWith('http')) { %>
+            <img src="<%= makale.image %>" alt="<%= makale.title %>" />
+            <% } else { %>
+            <div class="blog-detail-img-placeholder">
+              <i data-lucide="leaf" style="width:40px;height:40px;"></i>
+            </div>
+            <% } %>
+          </div>
+
+          <div class="blog-detail-content">
+            <% makale.content.forEach(function(block) { %>
+              <% if (block.type === 'paragraph') { %>
+                <p><%= block.text %></p>
+              <% } else if (block.type === 'heading') { %>
+                <h2><%= block.text %></h2>
+              <% } else if (block.type === 'list') { %>
+                <ul>
+                  <% block.items.forEach(function(item) { %>
+                  <li><%= item %></li>
+                  <% }); %>
+                </ul>
+              <% } else if (block.type === 'cta') { %>
+                <div class="blog-cta-inline">
+                  <p><%= block.text %></p>
+                  <a href="<%= block.buttonLink %>" class="btn btn-primary"><%= block.buttonText %></a>
+                </div>
+              <% } %>
+            <% }); %>
+          </div>
+
+          <div class="blog-detail-share">
+            <span>Paylaş:</span>
+            <a href="https://www.facebook.com/sharer.php?u=https://www.diyetisyenfulyasari.com/makale/<%= makale.slug %>" target="_blank" rel="noopener"><i data-lucide="facebook" style="width:16px;height:16px;"></i></a>
+            <a href="https://twitter.com/intent/tweet?url=https://www.diyetisyenfulyasari.com/makale/<%= makale.slug %>&text=<%= encodeURIComponent(makale.title) %>" target="_blank" rel="noopener"><i data-lucide="twitter" style="width:16px;height:16px;"></i></a>
+            <a href="https://wa.me/?text=https://www.diyetisyenfulyasari.com/makale/<%= makale.slug %>" target="_blank" rel="noopener"><i data-lucide="message-circle" style="width:16px;height:16px;"></i></a>
+            <a href="https://www.linkedin.com/sharing/share-offsite/?url=https://www.diyetisyenfulyasari.com/makale/<%= makale.slug %>" target="_blank" rel="noopener"><i data-lucide="linkedin" style="width:16px;height:16px;"></i></a>
+          </div>
+
+          <div class="blog-author-box">
+            <div class="author-avatar large">A</div>
+            <div class="author-box-info">
+              <h4><%= makale.author %></h4>
+              <p>Haliç Üniversitesi Beslenme ve Diyetetik bölümü mezunu, 13 yıllık deneyime sahip diyetisyen. Antalya'da nöroendokrin beslenme ve diyet danışmanlığı hizmeti vermektedir.</p>
+            </div>
+          </div>
+        </article>
+
+        <aside class="blog-sidebar">
+          <div class="sidebar-widget">
+            <h3>Kategoriler</h3>
+            <ul class="sidebar-categories">
+              <% const kategoriler = [...new Set(makaleler.map(m => m.category))]; %>
+              <% kategoriler.forEach(function(kat) { %>
+              <li><a href="/makaleler?kategori=<%= encodeURIComponent(kat) %>" class="<%= makale.category === kat ? 'active' : '' %>"><%= kat %> <span>(<%= makaleler.filter(m => m.category === kat).length %>)</span></a></li>
+              <% }); %>
+            </ul>
+          </div>
+
+          <div class="sidebar-widget">
+            <h3>İlgili Makaleler</h3>
+            <ul class="sidebar-popular">
+              <% ilgiliMakaleler.forEach(function(m) { %>
+              <li>
+                <a href="/makale/<%= m.slug %>">
+                  <span class="popular-number"><i data-lucide="file-text" style="width:16px;height:16px;"></i></span>
+                  <span class="popular-title"><%= m.title.substring(0, 50) %></span>
+                </a>
+              </li>
+              <% }); %>
+              <% if (ilgiliMakaleler.length === 0) { %>
+              <li style="font-size:14px;color:var(--text-light);padding:12px 0;">Bu kategoride başka makale bulunamadı.</li>
+              <% } %>
+            </ul>
+          </div>
+
+          <div class="sidebar-widget sidebar-cta">
+            <h3>Randevu Alın</h3>
+            <p>Size özel beslenme programı için hemen randevu alın.</p>
+            <a href="/iletisim" class="btn btn-primary btn-block">İletişime Geç</a>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </section>
+</main>
+
+<%- include('partials/footer') %>

@@ -1,0 +1,589 @@
+[
+  {
+    "slug": "saglikli-beslenmenin-temel-ilkeleri",
+    "title": "Sağlıklı Beslenmenin Temel İlkeleri: Uzman Diyetisyenden Altın Öneriler",
+    "metaDesc": "Sağlıklı beslenmenin temel ilkelerini uzman diyetisyen gözüyle öğrenin. Dengeli beslenme, porsiyon kontrolü ve doğru besin seçimleri hakkında her şey.",
+    "category": "Genel Beslenme",
+    "image": "https://images.unsplash.com/photo-1498837167922-ddd27525d352?w=600&q=80",
+    "date": "2026-05-28",
+    "readTime": 8,
+    "author": "Uzm. Dyt. Ayşe Yılmaz",
+    "featured": true,
+    "content": [
+      {
+        "type": "paragraph",
+        "text": "Sağlıklı beslenme, sadece kilo kontrolü değil; aynı zamanda hastalıklardan korunma, enerji seviyesini yüksek tutma ve genel yaşam kalitesini artırma anlamına gelir. Antalya'da diyetisyen olarak 15 yıllık deneyimimle edindiğim en önemli bilgi şudur: Her bireyin beslenme ihtiyacı farklıdır ve kişiye özel çözümler kalıcı başarı getirir."
+      },
+      {
+        "type": "heading",
+        "text": "Dengeli Beslenme Nedir?"
+      },
+      {
+        "type": "paragraph",
+        "text": "Dengeli beslenme, vücudun ihtiyaç duyduğu tüm besin öğelerini (karbonhidrat, protein, yağ, vitamin, mineral ve su) yeterli miktarlarda ve doğru oranlarda almayı ifade eder. Tek tip beslenme, vücudun dengesini bozar ve uzun vadede sağlık sorunlarına yol açar."
+      },
+      {
+        "type": "list",
+        "items": [
+          "Günde en az 5 porsiyon sebze ve meyve tüketin",
+          "Tam tahıllı ürünleri tercih edin (bulgur, esmer pirinç, yulaf)",
+          "Protein kaynaklarını çeşitlendirin (balık, tavuk, bakliyat, yumurta)",
+          "Sağlıklı yağları tüketin (zeytinyağı, avokado, ceviz)",
+          "Günde en az 2 litre su için"
+        ]
+      },
+      {
+        "type": "heading",
+        "text": "Porsiyon Kontrolü Neden Önemlidir?"
+      },
+      {
+        "type": "paragraph",
+        "text": "Sağlıklı besinler tüketiyor olsanız bile porsiyon kontrolü sağlamazsanız kilo alımı kaçınılmazdır. Tabak yöntemi ile porsiyon kontrolünü kolayca sağlayabilirsiniz: Tabağınızın yarısını sebzeler, çeyreğini protein, kalan çeyreğini de karbonhidratlar oluşturmalıdır."
+      },
+      {
+        "type": "heading",
+        "text": "Antalya'da Beslenme Alışkanlıkları"
+      },
+      {
+        "type": "paragraph",
+        "text": "Antalya gibi Akdeniz ikliminin hakim olduğu bir bölgede yaşamak, beslenme açısından büyük bir avantajdır. Mevsiminde taze sebze ve meyvelere erişim kolaydır. Akdeniz tipi beslenme, kalp sağlığından kilo kontrolüne kadar birçok fayda sağlar. Zeytinyağı, balık, taze otlar ve sebzeler Antalya mutfağının vazgeçilmezleridir."
+      },
+      {
+        "type": "cta",
+        "text": "Size özel beslenme programı için hemen randevu alın!",
+        "buttonText": "Randevu Al",
+        "buttonLink": "/iletisim"
+      },
+      {
+        "type": "heading",
+        "text": "Sağlıklı Beslenme Alışkanlığı Nasıl Kazanılır?"
+      },
+      {
+        "type": "paragraph",
+        "text": "Sağlıklı beslenme alışkanlığı kazanmak bir gecede olmaz. Küçük adımlarla başlayarak kalıcı değişiklikler yapabilirsiniz. Öncelikle günlük beslenme günlüğü tutarak ne yediğinizin farkına varın. Ardından tek tek iyileştirmeler yapmaya başlayın. Örneğin ilk hafta şekerli içecekleri bırakın, ikinci hafta beyaz ekmek yerine tam buğday ekmeği tüketin."
+      },
+      {
+        "type": "paragraph",
+        "text": "Unutmayın: Mükemmel olmak zorunda değilsiniz. Haftada bir öğün kendinize ödül vermek, motivasyonunuzu yüksek tutmanıza yardımcı olur. Önemli olan genel beslenme düzeninizin sağlıklı olmasıdır."
+      }
+    ]
+  },
+  {
+    "slug": "kilo-vermek-icin-dogru-beslenme-programi",
+    "title": "Kilo Vermek İçin Doğru Beslenme Programı Nasıl Olmalı?",
+    "metaDesc": "Sağlıklı kilo vermek için doğru beslenme programı nasıl hazırlanır? Uzman diyetisyen rehberliğinde bilimsel kilo verme yöntemleri ve püf noktaları.",
+    "category": "Kilo Yönetimi",
+    "image": "https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?w=600&q=80",
+    "date": "2026-05-20",
+    "readTime": 10,
+    "author": "Uzm. Dyt. Ayşe Yılmaz",
+    "featured": true,
+    "content": [
+      {
+        "type": "paragraph",
+        "text": "Kilo vermek, birçok kişinin hayatında en az bir kez denediği ancak çoğu zaman kalıcı sonuç alamadığı bir süreçtir. Bunun en büyük nedeni, bilimsel temeli olmayan, kişiye özel hazırlanmamış diyet programlarının uygulanmasıdır. Antalya diyetisyen ofisimde her gün onlarca danışanıma uyguladığım bilimsel kilo verme yöntemlerini sizlerle paylaşıyorum."
+      },
+      {
+        "type": "heading",
+        "text": "Bilimsel Temelli Kilo Verme"
+      },
+      {
+        "type": "paragraph",
+        "text": "Sağlıklı kilo vermenin temel prensibi, harcadığınız enerjiden daha az enerji almak ancak bunu yaparken vücudun ihtiyaç duyduğu tüm besin öğelerini yeterli miktarda almaktır. Çok düşük kalorili diyetler kısa vadede hızlı kilo kaybı sağlasa da, uzun vadede metabolizmayı yavaşlatır ve kaybedilen kiloların daha fazlasıyla geri alınmasına neden olur."
+      },
+      {
+        "type": "heading",
+        "text": "Kişisel Faktörlerin Önemi"
+      },
+      {
+        "type": "list",
+        "items": [
+          "Yaş, cinsiyet ve genetik faktörler",
+          "Günlük fiziksel aktivite düzeyi",
+          "Mevcut sağlık durumu ve kronik hastalıklar",
+          "Metabolizma hızı ve hormonal denge",
+          "Beslenme alışkanlıkları ve yeme davranışları"
+        ]
+      },
+      {
+        "type": "paragraph",
+        "text": "Bu faktörlerin her biri, size özel bir beslenme programı hazırlanmasını gerektirir. Hazır diyet listeleri, bu faktörleri göz ardı ettiği için çoğu zaman başarısız olur."
+      },
+      {
+        "type": "cta",
+        "text": "Size özel kilo verme programı için hemen iletişime geçin!",
+        "buttonText": "İletişime Geç",
+        "buttonLink": "/iletisim"
+      },
+      {
+        "type": "heading",
+        "text": "Haftada Kaç Kilo Vermek Sağlıklıdır?"
+      },
+      {
+        "type": "paragraph",
+        "text": "Sağlıklı kilo kaybı haftada 0.5-1 kg arasıdır. Daha hızlı kilo kaybı, kas kaybına, safra kesesi sorunlarına, saç dökülmesine ve metabolizma yavaşlamasına yol açabilir. Unutmayın: Yavaş ve istikrarlı kilo kaybı, kalıcı sonuçlar getirir."
+      },
+      {
+        "type": "heading",
+        "text": "Kilo Verme Sürecinde Beslenme İpuçları"
+      },
+      {
+        "type": "list",
+        "items": [
+          "Protein ağırlıklı beslenin (tokluk süresini uzatır)",
+          "Lifli gıdalar tüketin (sebze, meyve, tam tahıllar)",
+          "İşlenmiş gıdalardan ve şekerden uzak durun",
+          "Yemeklerinizi yavaş yiyin ve iyice çiğneyin",
+          "Düzenli uyuyun (yetersiz uyku kilo vermeyi zorlaştırır)",
+          "Stresten uzak durun (kortizol kilo alımını tetikler)"
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "diyabet-ve-beslenme",
+    "title": "Diyabet ve Beslenme: Kan Şekerini Dengeleyen Besinler",
+    "metaDesc": "Diyabet hastaları için beslenme rehberi. Kan şekerini dengeleyen besinler, glisemik indeks düşük gıdalar ve diyabet diyeti hakkında uzman önerileri.",
+    "category": "Hastalık Diyetleri",
+    "image": "https://images.unsplash.com/photo-1574484284002-952d92456975?w=600&q=80",
+    "date": "2026-05-15",
+    "readTime": 9,
+    "author": "Uzm. Dyt. Ayşe Yılmaz",
+    "featured": true,
+    "content": [
+      {
+        "type": "paragraph",
+        "text": "Diyabet, günümüzde en yaygın kronik hastalıklardan biridir. Ancak doğru beslenme ile kan şekeri kontrol altına alınabilir ve diyabetin olumsuz etkileri minimize edilebilir. Antalya'da diyetisyen olarak diyabet hastalarına uyguladığım beslenme programlarının temel prensiplerini bu yazıda bulabilirsiniz."
+      },
+      {
+        "type": "heading",
+        "text": "Diyabet Diyetinin Temel Prensipleri"
+      },
+      {
+        "type": "list",
+        "items": [
+          "Karbonhidrat alımını dengeleyin ve porsiyon kontrolü yapın",
+          "Düşük glisemik indeksli besinleri tercih edin",
+          "Protein ve lif açısından zengin beslenin",
+          "Sağlıklı yağlar tüketin (zeytinyağı, avokado, balık)",
+          "Öğün atlamayın, düzenli aralıklarla beslenin"
+        ]
+      },
+      {
+        "type": "heading",
+        "text": "Glisemik İndeks Nedir?"
+      },
+      {
+        "type": "paragraph",
+        "text": "Glisemik indeks (Gİ), bir besinin kan şekerini ne kadar hızlı yükselttiğini gösteren bir ölçüttür. Düşük Gİ'li besinler kan şekerini yavaş yükseltir ve uzun süre tokluk sağlar. Diyabet hastalarının düşük Gİ'li besinleri tercih etmesi önerilir."
+      },
+      {
+        "type": "heading",
+        "text": "Düşük Glisemik İndeksli Besinler"
+      },
+      {
+        "type": "list",
+        "items": [
+          "Tam tahıllar (bulgur, yulaf, esmer pirinç, kinoa)",
+          "Bakliyat (mercimek, nohut, kuru fasulye)",
+          "Sebzeler (brokoli, ıspanak, marul, kabak)",
+          "Meyveler (elma, armut, çilek, kiraz)",
+          "Kuruyemişler (ceviz, badem, fındık)"
+        ]
+      },
+      {
+        "type": "cta",
+        "text": "Diyabet beslenme programı oluşturmak için uzman desteği alın.",
+        "buttonText": "Uzman Desteği",
+        "buttonLink": "/iletisim"
+      },
+      {
+        "type": "heading",
+        "text": "Kan Şekerini Dengeleyen Besinler"
+      },
+      {
+        "type": "paragraph",
+        "text": "Tarçın, zencefil, zerdeçal gibi baharatlar kan şekerini dengelemeye yardımcı olur. Ayrıca elma sirkesi, yemeklerden önce tüketildiğinde kan şekeri yanıtını iyileştirebilir. Yeşil yapraklı sebzeler, omega-3 yağ asitleri açısından zengin balıklar ve probiyotik içeren yoğurt diyabet dostu besinler arasındadır."
+      }
+    ]
+  },
+  {
+    "slug": "sporcu-beslenmesi-performans-arttiran-besinler",
+    "title": "Sporcu Beslenmesi: Performansı Artıran Besinler ve Supplementler",
+    "metaDesc": "Sporcu beslenmesi hakkında her şey. Performans artırıcı besinler, egzersiz öncesi ve sonrası beslenme, supplement kullanımı ve sıvı tüketimi rehberi.",
+    "category": "Sporcu Beslenmesi",
+    "image": "https://images.unsplash.com/photo-1532384748853-8f54a8f476e2?w=600&q=80",
+    "date": "2026-05-10",
+    "readTime": 8,
+    "author": "Uzm. Dyt. Ayşe Yılmaz",
+    "featured": true,
+    "content": [
+      {
+        "type": "paragraph",
+        "text": "Sporcu beslenmesi, performansı doğrudan etkileyen en önemli faktörlerden biridir. Doğru beslenme ile antrenman verimliliğinizi artırabilir, sakatlık riskini azaltabilir ve toparlanma sürecini hızlandırabilirsiniz. Antalya'da sporcu danışanlarıma uyguladığım beslenme stratejilerini bu yazıda özetledim."
+      },
+      {
+        "type": "heading",
+        "text": "Egzersiz Öncesi Beslenme"
+      },
+      {
+        "type": "paragraph",
+        "text": "Egzersiz öncesi beslenme, performansınızı belirleyen en kritik öğündür. Antrenmandan 2-3 saat önce karbonhidrat ağırlıklı, orta proteinli ve düşük yağlı bir öğün tüketilmelidir. Bu, kas glikojen depolarını doldurur ve egzersiz sırasında enerji seviyesini korur."
+      },
+      {
+        "type": "list",
+        "items": [
+          "Muz ve yulaf ezmesi",
+          "Tam buğday ekmeği ile fıstık ezmesi",
+          "Meyveli yoğurt ve granola",
+          "Kinoa salatası ve ızgara tavuk"
+        ]
+      },
+      {
+        "type": "heading",
+        "text": "Egzersiz Sonrası Beslenme"
+      },
+      {
+        "type": "paragraph",
+        "text": "Egzersiz sonrası ilk 30-45 dakika, kasların besinleri en verimli şekilde kullandığı altın saattir. Bu dönemde protein ve karbonhidratın birlikte tüketilmesi, kas onarımını ve toparlanmayı hızlandırır."
+      },
+      {
+        "type": "cta",
+        "text": "Size özel sporcu beslenme programı için hemen randevu alın!",
+        "buttonText": "Randevu Al",
+        "buttonLink": "/iletisim"
+      },
+      {
+        "type": "heading",
+        "text": "Supplement Kullanımı"
+      },
+      {
+        "type": "paragraph",
+        "text": "Supplementler, dengeli bir beslenme programının yerini tutmaz ancak ihtiyaç duyulduğunda performansı destekleyebilir. Protein tozu, kreatin, BCAA ve beta-alanin en yaygın kullanılan supplementlerdir. Supplement kullanmadan önce mutlaka bir uzmana danışmanız önemlidir."
+      }
+    ]
+  },
+  {
+    "slug": "detoks-nedir-dogru-detoks-programi",
+    "title": "Detoks Nedir? Doğru Detoks Programı Nasıl Yapılır?",
+    "metaDesc": "Detoks vücudu arındırma yöntemi hakkında merak edilenler. Doğru detoks programı, detoks suları, mevsimsel detoks ve dikkat edilmesi gerekenler.",
+    "category": "Detoks",
+    "image": "https://images.unsplash.com/photo-1556881286-fc6915169721?w=600&q=80",
+    "date": "2026-05-05",
+    "readTime": 7,
+    "author": "Uzm. Dyt. Ayşe Yılmaz",
+    "featured": false,
+    "content": [
+      {
+        "type": "paragraph",
+        "text": "Detoks, son yılların en popüler beslenme trendlerinden biri haline geldi. Peki detoks gerçekten işe yarıyor mu? Bilimsel olarak detoks nedir ve doğru detoks programı nasıl uygulanmalıdır? Antalyalı danışanlarıma sıklıkla sorulan bu soruları yanıtlıyorum."
+      },
+      {
+        "type": "heading",
+        "text": "Detoks Nedir?"
+      },
+      {
+        "type": "paragraph",
+        "text": "Detoks, vücudun doğal arınma mekanizmalarını destekleyerek toksinlerin vücuttan atılmasını kolaylaştıran bir beslenme yaklaşımıdır. Vücudumuz zaten kendi kendini detoksifiye edebilme yeteneğine sahiptir ancak bazı durumlarda bu sistemi desteklemek gerekebilir."
+      },
+      {
+        "type": "list",
+        "items": [
+          "Mevsim geçişlerinde enerji düşüklüğü yaşıyorsanız",
+          "Sindirim sorunlarınız varsa (şişkinlik, kabızlık)",
+          "Cilt problemleriniz arttıysa",
+          "Uyku kaliteniz düştüyse",
+          "Yoğun ve stresli bir dönemden geçiyorsanız"
+        ]
+      },
+      {
+        "type": "heading",
+        "text": "Doğru Detoks Programı Nasıl Olmalı?"
+      },
+      {
+        "type": "paragraph",
+        "text": "Bilimsel temelli bir detoks programı, aç kalmayı veya tek tip beslenmeyi içermez. Aksine, vücudun ihtiyaç duyduğu tüm besin öğelerini alırken, toksin yükünü azaltmayı hedefler. İşlenmiş gıdaları, şekeri ve kafeini azaltmak, su tüketimini artırmak detoksun temelini oluşturur."
+      },
+      {
+        "type": "cta",
+        "text": "Profesyonel detoks programı için bizimle iletişime geçin.",
+        "buttonText": "Bilgi Al",
+        "buttonLink": "/iletisim"
+      },
+      {
+        "type": "heading",
+        "text": "Detoks Suları Gerçekten İşe Yarıyor mu?"
+      },
+      {
+        "type": "paragraph",
+        "text": "Meyve ve sebze suları, vitamin ve mineral açısından zengindir ancak tek başına detoks etkisi yaratmaz. Detoks sularını, dengeli bir beslenme programının destekleyicisi olarak düşünebilirsiniz. Salatalık, limon, zencefil ve maydanoz ile hazırlanan detoks suları antioksidan açısından zengindir."
+      }
+    ]
+  },
+  {
+    "slug": "gebelikte-beslenme-anne-ve-bebek-sagligi",
+    "title": "Gebelikte Beslenme: Anne ve Bebek Sağlığı İçin Altın Öneriler",
+    "metaDesc": "Gebelik döneminde sağlıklı beslenme rehberi. Anne adayları için folik asit, demir, kalsiyum ve omega-3 kaynakları, gebelikte kilo alımı ve dikkat edilmesi gerekenler.",
+    "category": "Gebelik Beslenmesi",
+    "image": "https://images.unsplash.com/photo-1516534775068-ba3e7458af70?w=600&q=80",
+    "date": "2026-04-28",
+    "readTime": 9,
+    "author": "Uzm. Dyt. Ayşe Yılmaz",
+    "featured": false,
+    "content": [
+      {
+        "type": "paragraph",
+        "text": "Gebelik dönemi, bir kadının hayatındaki en özel ve en kritik dönemlerden biridir. Anne adayının beslenmesi, hem kendi sağlığı hem de bebeğin gelişimi için büyük önem taşır. Antalya'da gebelik danışmanlığı yaptığım anne adaylarına önerdiğim beslenme prensiplerini bu yazıda paylaşıyorum."
+      },
+      {
+        "type": "heading",
+        "text": "Gebelikte Hangi Besin Öğelerine İhtiyaç Artar?"
+      },
+      {
+        "type": "list",
+        "items": [
+          "Folik Asit: Yeşil yapraklı sebzeler, bakliyat, portakal",
+          "Demir: Kırmızı et, yumurta, kuru üzüm, pekmez",
+          "Kalsiyum: Süt, yoğurt, peynir, badem, yeşil sebzeler",
+          "Omega-3: Balık, ceviz, keten tohumu, chia tohumu",
+          "Protein: Tavuk, balık, yumurta, bakliyat, süt ürünleri"
+        ]
+      },
+      {
+        "type": "heading",
+        "text": "Gebelikte Kaç Kilo Alınmalı?"
+      },
+      {
+        "type": "paragraph",
+        "text": "Gebelikte alınması gereken kilo, gebelik öncesi vücut kitle indeksine göre değişir. Normal kilolu bir kadının gebelik boyunca 11-16 kg alması önerilir. Ancak bu miktar, kişisel faktörlere göre değişiklik gösterebilir. Bu nedenle düzenli diyetisyen takibi önemlidir."
+      },
+      {
+        "type": "cta",
+        "text": "Gebelik beslenme danışmanlığı için hemen randevu alın!",
+        "buttonText": "Randevu Al",
+        "buttonLink": "/iletisim"
+      },
+      {
+        "type": "heading",
+        "text": "Gebelikte Kaçınılması Gereken Besinler"
+      },
+      {
+        "type": "list",
+        "items": [
+          "Çiğ veya az pişmiş et, balık ve yumurta",
+          "Pastörize edilmemiş süt ve süt ürünleri",
+          "Yüksek cıva içeren balıklar (kılıç balığı, köpek balığı)",
+          "Kafein tüketimini sınırlayın (günde 200 mg'ı geçmeyin)",
+          "Alkol ve sigaradan tamamen uzak durun"
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "metabolizma-hizlandirma-yontemleri",
+    "title": "Metabolizma Hızlandırma Yöntemleri: Bilimsel Gerçekler ve Mitler",
+    "metaDesc": "Metabolizma hızlandırma yöntemleri nelerdir? Metabolizmayı hızlandıran besinler, egzersizler ve yaşam tarzı değişiklikleri hakkında bilimsel gerçekler.",
+    "category": "Genel Beslenme",
+    "image": "https://images.unsplash.com/photo-1546069901-e5f0c5e5f5b7?w=600&q=80",
+    "date": "2026-04-20",
+    "readTime": 8,
+    "author": "Uzm. Dyt. Ayşe Yılmaz",
+    "featured": false,
+    "content": [
+      {
+        "type": "paragraph",
+        "text": "Metabolizma hızlandırma, kilo vermek isteyen herkesin en çok merak ettiği konuların başında gelir. Peki metabolizma gerçekten hızlandırılabilir mi? Bilimsel veriler ışığında metabolizma hakkında doğru bilinen yanlışları ve gerçekleri açıklıyorum."
+      },
+      {
+        "type": "heading",
+        "text": "Metabolizma Nedir?"
+      },
+      {
+        "type": "paragraph",
+        "text": "Metabolizma, vücudun hayati fonksiyonlarını sürdürebilmek için harcadığı enerjidir. Bazal metabolizma hızı (BMH), dinlenme halindeyken vücudun solunum, dolaşım, sıcaklık düzenlemesi gibi temel işlevler için harcadığı enerjiyi ifade eder. BMH, toplam enerji harcamasının %60-75'ini oluşturur."
+      },
+      {
+        "type": "heading",
+        "text": "Metabolizmayı Etkileyen Faktörler"
+      },
+      {
+        "type": "list",
+        "items": [
+          "Kas kütlesi: Kas dokusu, yağ dokusundan daha fazla kalori yakar",
+          "Yaş: Yaş ilerledikçe metabolizma yavaşlar",
+          "Cinsiyet: Erkeklerde metabolizma daha hızlıdır",
+          "Genetik: Ailesel faktörler metabolizma hızını etkiler",
+          "Hormonlar: Tiroid hormonları metabolizmanın düzenlenmesinde kritik rol oynar"
+        ]
+      },
+      {
+        "type": "heading",
+        "text": "Metabolizmayı Hızlandıran Yöntemler"
+      },
+      {
+        "type": "paragraph",
+        "text": "Metabolizmayı hızlandırmak için yapabileceğiniz en etkili şeylerden biri kas kütlenizi artırmaktır. Düzenli egzersiz, özellikle direnç antrenmanları metabolizmayı hızlandırır. Ayrıca protein ağırlıklı beslenmek, yeterli su tüketmek ve düzenli uyumak da metabolizmayı destekler."
+      },
+      {
+        "type": "cta",
+        "text": "Metabolizma analizi ve kişisel program için bize ulaşın!",
+        "buttonText": "Randevu Al",
+        "buttonLink": "/iletisim"
+      }
+    ]
+  },
+  {
+    "slug": "saglikli-atistirmalik-tarifleri",
+    "title": "Sağlıklı Atıştırmalık Tarifleri: Pratik ve Lezzetli Öneriler",
+    "metaDesc": "Sağlıklı atıştırmalık tarifleri ile diyet yaparken lezzetten ödün vermeyin. Pratik, besleyici ve düşük kalorili atıştırmalık önerileri.",
+    "category": "Tarifler",
+    "image": "https://images.unsplash.com/photo-1498837167922-ddd27525d352?w=600&q=80",
+    "date": "2026-04-15",
+    "readTime": 6,
+    "author": "Uzm. Dyt. Ayşe Yılmaz",
+    "featured": false,
+    "content": [
+      {
+        "type": "paragraph",
+        "text": "Diyet yaparken en çok zorlanılan konuların başında atıştırmalık ihtiyacı gelir. Oysa sağlıklı atıştırmalıklarla hem kan şekerinizi dengeleyebilir hem de diyetinizi bozmadan lezzetli alternatifler tüketebilirsiniz. İşte mutfağınızda kolayca hazırlayabileceğiniz sağlıklı atıştırmalık tarifleri."
+      },
+      {
+        "type": "heading",
+        "text": "1. Enerji Topları"
+      },
+      {
+        "type": "paragraph",
+        "text": "Malzemeler: 1 su bardağı hurma, 1/2 su bardağı yulaf ezmesi, 2 yemek kaşığı fıstık ezmesi, 1 yemek kaşığı kakao, 1/2 çay kaşığı tarçın. Tüm malzemeleri robottan geçirin, ceviz büyüklüğünde toplar yapın ve buzdolabında 30 dakika dinlendirin. Sağlıklı, enerji veren ve çok lezzetli bir atıştırmalık!"
+      },
+      {
+        "type": "heading",
+        "text": "2. Yoğurtlu Meyve Kasesi"
+      },
+      {
+        "type": "paragraph",
+        "text": "Malzemeler: 1 kase yoğurt, yarım muz, bir avuç çilek, 1 yemek kaşığı granola, 1 tatlı kaşığı bal, ceviz içi. Yoğurdu kaseye alın, üzerine doğranmış meyveleri, granolayı ve cevizi ekleyin. Bal ile tatlandırın. Protein ve kalsiyum açısından zengin bu atıştırmalık, hem tok tutar hem de enerji verir."
+      },
+      {
+        "type": "cta",
+        "text": "Size özel beslenme programı ve tarifler için iletişime geçin!",
+        "buttonText": "İletişime Geç",
+        "buttonLink": "/iletisim"
+      },
+      {
+        "type": "heading",
+        "text": "3. Sebzeli Humus"
+      },
+      {
+        "type": "paragraph",
+        "text": "Malzemeler: 1 su bardağı haşlanmış nohut, 2 yemek kaşığı tahin, 1 limon suyu, 1 diş sarımsak, 2 yemek kaşığı zeytinyağı, tuz, kimyon. Tüm malzemeleri blenderdan geçirin. Yanında salatalık, havuç, biber gibi çiğ sebzelerle servis edin. Lif ve protein açısından zengin bu atıştırmalık, uzun süre tok kalmanızı sağlar."
+      }
+    ]
+  },
+  {
+    "slug": "bagisiklik-sistemini-guclendiren-besinler",
+    "title": "Bağışıklık Sistemini Güçlendiren Besinler ve Beslenme Önerileri",
+    "metaDesc": "Bağışıklık sistemini güçlendiren besinler, vitamin ve mineral kaynakları, mevsimsel beslenme ve hastalıklardan korunmak için beslenme önerileri.",
+    "category": "Genel Beslenme",
+    "image": "https://images.unsplash.com/photo-1540479859555-17af45c78602?w=600&q=80",
+    "date": "2026-04-10",
+    "readTime": 7,
+    "author": "Uzm. Dyt. Ayşe Yılmaz",
+    "featured": false,
+    "content": [
+      {
+        "type": "paragraph",
+        "text": "Güçlü bir bağışıklık sistemi, hastalıklara karşı en etkili kalkanımızdır. Doğru beslenme ile bağışıklık sisteminizi destekleyebilir ve hastalık riskini azaltabilirsiniz. Antalya'da danışanlarıma önerdiğim bağışıklık güçlendirici beslenme önerilerini bu yazıda bulabilirsiniz."
+      },
+      {
+        "type": "heading",
+        "text": "Bağışıklık İçin Temel Vitamin ve Mineraller"
+      },
+      {
+        "type": "list",
+        "items": [
+          "C Vitamini: Portakal, kivi, biber, brokoli, çilek",
+          "D Vitamini: Güneş ışığı, balık, yumurta sarısı, mantar",
+          "Çinko: Kabak çekirdeği, kırmızı et, bakliyat, ceviz",
+          "Probiyotikler: Yoğurt, kefir, turşu, kombu çayı",
+          "Omega-3: Somon, sardalya, ceviz, keten tohumu"
+        ]
+      },
+      {
+        "type": "heading",
+        "text": "Mevsimsel Beslenmenin Önemi"
+      },
+      {
+        "type": "paragraph",
+        "text": "Mevsiminde tüketilen sebze ve meyveler, hem besin değeri açısından daha zengindir hem de vücudun o mevsimde ihtiyaç duyduğu vitamin ve mineralleri sağlar. Antalya gibi dört mevsimin yaşandığı bir bölgede mevsimsel beslenmek oldukça kolaydır."
+      },
+      {
+        "type": "cta",
+        "text": "Bağışıklık sisteminizi güçlendirmek için profesyonel destek alın!",
+        "buttonText": "Randevu Al",
+        "buttonLink": "/iletisim"
+      },
+      {
+        "type": "heading",
+        "text": "Bağışıklık Güçlendirici Karışım Tarifi"
+      },
+      {
+        "type": "paragraph",
+        "text": "Malzemeler: 1 tatlı kaşığı zencefil, 1 tatlı kaşığı zerdeçal, 1 limon suyu, 1 yemek kaşığı bal, 1 çubuk tarçın. Tüm malzemeleri 2 su bardağı sıcak suya ekleyin, 5 dakika demleyin ve ılık olarak tüketin. Bu karışım, antioksidan ve anti-enflamatuar özellikleriyle bağışıklık sisteminizi destekler."
+      }
+    ]
+  },
+  {
+    "slug": "cocuklarda-saglikli-beslenme-aliskanligi",
+    "title": "Çocuklarda Sağlıklı Beslenme Alışkanlığı Nasıl Kazandırılır?",
+    "metaDesc": "Çocuklarda sağlıklı beslenme alışkanlığı kazandırma yöntemleri. Okul çağı çocukları için beslenme önerileri, sebze sevdiren tarifler ve sağlıklı atıştırmalıklar.",
+    "category": "Çocuk Beslenmesi",
+    "image": "https://images.unsplash.com/photo-1490818387583-1baba5e638af?w=600&q=80",
+    "date": "2026-04-05",
+    "readTime": 8,
+    "author": "Uzm. Dyt. Ayşe Yılmaz",
+    "featured": false,
+    "content": [
+      {
+        "type": "paragraph",
+        "text": "Çocukluk döneminde kazanılan beslenme alışkanlıkları, yetişkinlik dönemindeki sağlık durumunu doğrudan etkiler. Antalya'da çocuk beslenmesi danışmanlığı yaptığım ailelere önerdiğim yöntemleri ve püf noktalarını bu yazıda paylaşıyorum."
+      },
+      {
+        "type": "heading",
+        "text": "Çocuklara Sağlıklı Beslenme Alışkanlığı Kazandırma Yöntemleri"
+      },
+      {
+        "type": "list",
+        "items": [
+          "Kendiniz sağlıklı beslenerek örnek olun",
+          "Sebze ve meyveleri eğlenceli sunumlarla servis edin",
+          "Çocuğunuzu mutfakta yemek hazırlığına dahil edin",
+          "Yeni besinleri denemesi için cesaretlendirin, zorlamayın",
+          "Ödül olarak abur cubur kullanmayın",
+          "Düzenli öğün saatleri belirleyin"
+        ]
+      },
+      {
+        "type": "heading",
+        "text": "Okul Çağı Çocukları İçin Beslenme Çantası Önerileri"
+      },
+      {
+        "type": "paragraph",
+        "text": "Beslenme çantası hazırlarken dikkat edilmesi gereken en önemli nokta, tüm besin gruplarından dengeli bir şekilde yer vermektir. Tam tahıllı ekmekle hazırlanmış peynirli sandviç, yanında mevsim meyveleri, yoğurt ve ceviz içeren bir beslenme çantası, çocuğunuzun enerji ihtiyacını karşılayacaktır."
+      },
+      {
+        "type": "cta",
+        "text": "Çocuğunuz için beslenme danışmanlığı almak ister misiniz?",
+        "buttonText": "Bilgi Al",
+        "buttonLink": "/iletisim"
+      },
+      {
+        "type": "heading",
+        "text": "Sebze Sevdiren Tarifler"
+      },
+      {
+        "type": "paragraph",
+        "text": "Çocuklar genellikle sebzeleri görünümü veya dokusu nedeniyle reddedebilir. Sebzeleri püre haline getirip köfteye karıştırmak, sebzeli muffinler hazırlamak veya sebzeleri eğlenceli şekillerde kesmek, çocukların sebze tüketimini artıran etkili yöntemlerdir."
+      }
+    ]
+  }
+]

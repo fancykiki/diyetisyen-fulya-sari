@@ -1,0 +1,92 @@
+<footer class="footer">
+  <div class="footer-wave">
+    <svg viewBox="0 0 1440 100" preserveAspectRatio="none">
+      <path d="M0,50 C360,100 720,0 1080,50 C1260,75 1350,50 1440,50 L1440,100 L0,100 Z" fill="#10291F"></path>
+    </svg>
+  </div>
+  <div class="footer-main">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-about">
+          <div class="footer-logo">
+            <img src="/images/fulya-sari-logo.png" alt="Fulya Sarı" class="footer-logo-img">
+          </div>
+          <p>Antalya'da 13 yıllık deneyim ile nöroendokrin beslenme, hormonal denge ve kilo yönetimi alanlarında profesyonel danışmanlık hizmeti. Sağlıklı yaşam yolculuğunuzda yanınızdayız.</p>
+          <div class="footer-social">
+            <a href="https://www.instagram.com/diyetisyenfulyasari/" target="_blank" rel="noopener" aria-label="Instagram"><i data-lucide="instagram" style="width:18px;height:18px;"></i></a>
+            <a href="https://www.facebook.com/people/Diyetisyen-Fulya-Sar%C4%B1/100089580203280/" target="_blank" rel="noopener" aria-label="Facebook"><i data-lucide="facebook" style="width:18px;height:18px;"></i></a>
+            <a href="https://wa.me/<%= site.phone.replace(/[^0-9]/g, '') %>?text=Merhaba%2C%20beslenme%20dan%C4%B1%C5%9Fmanl%C4%B1%C4%9F%C4%B1%20hakk%C4%B1nda%20bilgi%20almak%20istiyorum." target="_blank" rel="noopener" aria-label="WhatsApp"><i data-lucide="message-circle" style="width:18px;height:18px;"></i></a>
+          </div>
+        </div>
+        <div class="footer-links">
+          <h4>Hızlı Erişim</h4>
+          <ul>
+            <li><a href="/">Ana Sayfa</a></li>
+            <li><a href="/hizmetler">Hizmetler</a></li>
+            <li><a href="/hakkimizda">Hakkımızda</a></li>
+            <li><a href="/makaleler">Makaleler</a></li>
+            <li><a href="/iletisim">İletişim</a></li>
+          </ul>
+        </div>
+        <div class="footer-services">
+          <h4>Hizmetler</h4>
+          <ul>
+            <li><a href="/hizmetler/noroendokrin-beslenme">Nöroendokrin Beslenme</a></li>
+            <li><a href="/hizmetler/duygusal-yeme-danismanligi">Duygusal Yeme Danışmanlığı</a></li>
+            <li><a href="/hizmetler/hormonal-denge-programlari">Hormonal Denge Programları</a></li>
+            <li><a href="/hizmetler/online-beslenme-koclugu">Online Beslenme Koçluğu</a></li>
+            <li><a href="/hizmetler/sporcu-beslenmesi">Sporcu Beslenmesi</a></li>
+          </ul>
+        </div>
+        <div class="footer-contact">
+          <h4>İletişim</h4>
+          <ul>
+            <li><i data-lucide="map-pin" style="width:16px;height:16px;"></i> <span><%= site.address %></span></li>
+            <li><i data-lucide="phone" style="width:16px;height:16px;"></i> <a href="tel:<%= site.phone.replace(/[^0-9+]/g, '') %>" style="color:rgba(255,255,255,0.6)"><%= site.phone %></a></li>
+            <li><i data-lucide="mail" style="width:16px;height:16px;"></i> <a href="mailto:<%= site.email %>" style="color:rgba(255,255,255,0.6)"><%= site.email %></a></li>
+            <li><i data-lucide="clock" style="width:16px;height:16px;"></i> <span><%= site.workingHours %></span></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="container">
+      <p>&copy; 2026 <%= site.title %>. Tüm hakları saklıdır. | <a href="/iletisim" style="color:var(--accent)">İletişim</a> | <a href="/makaleler" style="color:var(--accent)">Blog</a></p>
+    </div>
+  </div>
+</footer>
+
+<a href="https://wa.me/<%= site.phone.replace(/[^0-9]/g, '') %>?text=Merhaba%2C%20beslenme%20dan%C4%B1%C5%9Fmanl%C4%B1%C4%9F%C4%B1%20hakk%C4%B1nda%20bilgi%20almak%20istiyorum." class="whatsapp-float" target="_blank" rel="noopener" aria-label="WhatsApp ile iletişime geç">
+  <i data-lucide="message-circle" style="width:22px;height:22px;"></i>
+  <span class="whatsapp-float-text">WhatsApp'tan Yaz</span>
+</a>
+
+<!-- Mobile Bottom Contact Bar (moved to body via JS) -->
+<div id="mobileContactBar" class="mobile-contact-bar">
+  <a href="https://wa.me/<%= site.phone.replace(/[^0-9]/g, '') %>?text=Merhaba%2C%20beslenme%20dan%C4%B1%C5%9Fmanl%C4%B1%C4%9F%C4%B1%20hakk%C4%B1nda%20bilgi%20almak%20istiyorum." class="mobile-contact-btn mobile-contact-wa" target="_blank" rel="noopener" aria-label="WhatsApp ile iletişime geç">
+    <i data-lucide="message-circle" style="width:20px;height:20px;"></i>
+    <div class="mobile-contact-btn-text">
+      <span class="mobile-contact-label">WhatsApp</span>
+      <span class="mobile-contact-sublabel">Hemen Yaz</span>
+    </div>
+  </a>
+  <a href="https://www.google.com/maps/place/Diyetisyen+Fulya+Sar%C4%B1+Sa%C4%9Fl%C4%B1kl%C4%B1+Ya%C5%9Fam+ve+Diyet+Dan%C4%B1%C5%9Fmanl%C4%B1%C4%9F%C4%B1/@36.8917449,30.6721568,17.25z/data=!4m6!3m5!1s0x14c391af3496843f:0x301e0f8dcd9acd69!8m2!3d36.8921099!4d30.674957!16s%2Fg%2F11sb0l8yl8?hl=tr-TR&entry=ttu&g_ep=EgoyMDI2MDYwMS4wIKXMDSoASAFQAw%3D%3D" class="mobile-contact-btn mobile-contact-map" target="_blank" rel="noopener" aria-label="Google Haritalar'da yol tarifi al">
+    <i data-lucide="map-pin" style="width:20px;height:20px;"></i>
+    <div class="mobile-contact-btn-text">
+      <span class="mobile-contact-label">Haritalar</span>
+      <span class="mobile-contact-sublabel">Yol Tarifi</span>
+    </div>
+  </a>
+</div>
+
+<div class="scroll-top" id="scrollTop">
+  <i data-lucide="arrow-up" style="width:18px;height:18px;"></i>
+</div>
+
+<div class="toast-container" id="toastContainer"></div>
+
+<script>(function d(){if(typeof lucide!=='undefined'&&lucide.createIcons){lucide.createIcons()}else{setTimeout(d,100)}})();</script>
+<script src="/js/main.js"></script>
+</body>
+</html>

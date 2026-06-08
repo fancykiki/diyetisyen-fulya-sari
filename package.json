@@ -1,0 +1,14 @@
+{
+  "name": "diyetisyen-antalya",
+  "version": "1.0.0",
+  "description": "Antalya Diyetisyen - Profesyonel Beslenme Danışmanlığı",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js"
+  },
+  "dependencies": {
+    "ejs": "^3.1.10",
+    "express": "^4.21.0"
+  }
+}

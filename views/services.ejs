@@ -1,0 +1,195 @@
+<%- include('partials/header') %>
+<%- include('partials/navbar') %>
+
+<main>
+  <!-- ===== SERVICE PAGE HERO ===== -->
+  <section class="services-hero">
+    <div class="services-hero-bg"></div>
+    <div class="services-hero-pattern" aria-hidden="true"></div>
+    <div class="services-hero-glow" aria-hidden="true"></div>
+
+    <div class="container">
+      <div class="services-hero-wrapper">
+        <div class="services-hero-left">
+          <div class="breadcrumb">
+            <a href="/">Ana Sayfa</a>
+            <span class="breadcrumb-sep"><i data-lucide="chevron-right" style="width:12px;height:12px;"></i></span>
+            <span>Hizmetler</span>
+          </div>
+          <span class="services-hero-badge">
+            <span class="badge-dot"></span>
+            HİZMETLERİMİZ
+          </span>
+          <h1 class="services-hero-title">Beslenme Yolculuğunuz İçin<br><span class="title-accent">Profesyonel Danışmanlık</span></h1>
+          <p class="services-hero-desc">13 yıllık deneyimle nöroendokrin beslenme, duygusal yeme danışmanlığı, hormonal denge ve kilo yönetimi alanlarında size özel bilimsel çözümler sunuyoruz.</p>
+        </div>
+        <div class="services-hero-right">
+          <div class="hero-stats-strip">
+            <div class="hero-stat-item">
+              <div class="hero-stat-icon"><i data-lucide="user-check" style="width:18px;height:18px;"></i></div>
+              <div class="hero-stat-text">
+                <span class="hero-stat-label">Kişiye Özel</span>
+                <span class="hero-stat-desc">Bilimsel Plan</span>
+              </div>
+            </div>
+            <div class="hero-stat-divider"></div>
+            <div class="hero-stat-item">
+              <div class="hero-stat-icon"><i data-lucide="laptop" style="width:18px;height:18px;"></i></div>
+              <div class="hero-stat-text">
+                <span class="hero-stat-label">Online &amp; Yüz Yüze</span>
+                <span class="hero-stat-desc">Esnek Danışmanlık</span>
+              </div>
+            </div>
+            <div class="hero-stat-divider"></div>
+            <div class="hero-stat-item">
+              <div class="hero-stat-icon"><i data-lucide="calendar-check" style="width:18px;height:18px;"></i></div>
+              <div class="hero-stat-text">
+                <span class="hero-stat-label">Sürdürülebilir</span>
+                <span class="hero-stat-desc">Haftalık Takip</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SERVICES GRID ===== -->
+  <section class="services section" id="services">
+    <div class="container">
+      <div class="section-header center reveal-up">
+        <span class="section-tag">Uzmanlık Alanlarımız</span>
+        <h2 class="section-title">Size Özel <span style="color:var(--accent)">Beslenme Çözümleri</span></h2>
+        <p class="section-subtitle">Her danışanımızın metabolizması, yaşam tarzı ve hedefleri farklıdır. Bu nedenle her programı sıfırdan, kişiye özel olarak hazırlıyoruz.</p>
+      </div>
+      <div class="services-grid services-grid-premium">
+        <% services.forEach(function(service, idx) { %>
+        <div class="service-card-premium reveal-up">
+          <div class="service-card-glow"></div>
+          <div class="service-card-premium-header">
+            <div class="service-card-premium-icon theme-accent-<%= idx % 4 %>">
+              <i data-lucide="<%= service.icon %>" style="width:26px;height:26px;"></i>
+            </div>
+            <span class="service-card-premium-num"><%= String(idx + 1).padStart(2, '0') %></span>
+          </div>
+          <div class="service-card-premium-body">
+            <h3 class="service-card-premium-title"><%= service.title %></h3>
+            <p class="service-card-premium-desc"><%= service.shortDescription || service.description %></p>
+            <div class="service-benefit-chips">
+              <% if (service.benefits) { %>
+                <% service.benefits.slice(0, 3).forEach(function(benefit) { %>
+                <span class="benefit-chip"><i data-lucide="check" style="width:12px;height:12px;"></i> <%= benefit %></span>
+                <% }); %>
+              <% } %>
+            </div>
+            <a href="/hizmetler/<%= service.slug %>" class="service-premium-link">
+              <span>Detaylı Bilgi</span>
+              <i data-lucide="arrow-right" style="width:14px;height:14px;"></i>
+            </a>
+          </div>
+        </div>
+        <% }); %>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== HOW WE CHOOSE SECTION ===== -->
+  <section class="svc-choose section bg-light" id="svcChoose">
+    <div class="container">
+      <div class="section-header center reveal-up">
+        <span class="section-tag" style="background:var(--color-coral-light);color:var(--color-coral-dark);border-color:rgba(217,108,95,0.10);">
+          <span style="width:6px;height:6px;border-radius:50%;background:var(--color-coral);box-shadow:0 0 6px rgba(217,108,95,0.4);flex-shrink:0;"></span>
+          ÇALIŞMA YAKLAŞIMIMIZ
+        </span>
+        <h2 class="section-title">Size En Uygun Hizmeti <span style="color:var(--accent)">Nasıl Seçiyoruz?</span></h2>
+        <p class="section-subtitle">Her danışanımız için aynı özeni ve bilimsel yaklaşımı uyguluyor, sürecin her adımını kişiselleştiriyoruz.</p>
+      </div>
+      <div class="choose-grid">
+        <div class="choose-card reveal-up">
+          <div class="choose-num">01</div>
+          <div class="choose-icon ci-coral"><i data-lucide="heart" style="width:24px;height:24px;"></i></div>
+          <h3>Hedefinizi Dinliyoruz</h3>
+          <p>Sağlık geçmişiniz, beklentileriniz ve yaşam tarzınızı detaylıca dinleyerek sürece başlıyoruz.</p>
+        </div>
+        <div class="choose-card reveal-up">
+          <div class="choose-num">02</div>
+          <div class="choose-icon ci-sky"><i data-lucide="search" style="width:24px;height:24px;"></i></div>
+          <h3>Yaşam Düzeninizi Analiz Ediyoruz</h3>
+          <p>Günlük rutininiz, beslenme alışkanlıklarınız ve metabolik profilinizi kapsamlı şekilde değerlendiriyoruz.</p>
+        </div>
+        <div class="choose-card reveal-up">
+          <div class="choose-num">03</div>
+          <div class="choose-icon ci-amber"><i data-lucide="file-text" style="width:24px;height:24px;"></i></div>
+          <h3>Size Özel Plan Oluşturuyoruz</h3>
+          <p>Elde ettiğimiz veriler ışığında yalnızca size ait, bilimsel temelli bir beslenme programı hazırlıyoruz.</p>
+        </div>
+        <div class="choose-card reveal-up">
+          <div class="choose-num">04</div>
+          <div class="choose-icon ci-sage"><i data-lucide="refresh-cw" style="width:24px;height:24px;"></i></div>
+          <h3>Takip ile Sürdürülebilir Hale Getiriyoruz</h3>
+          <p>Düzenli kontrollerle ilerlemenizi değerlendiriyor, programı ihtiyaçlarınıza göre güncelliyoruz.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== GUIDE CARDS ===== -->
+  <section class="svc-guide section" id="svcGuide">
+    <div class="container">
+      <div class="section-header center reveal-up">
+        <span class="section-tag" style="background:var(--color-sky-light);color:var(--color-sky-dark);border-color:rgba(79,148,165,0.10);">
+          <span style="width:6px;height:6px;border-radius:50%;background:var(--color-sky);box-shadow:0 0 6px rgba(79,148,165,0.4);flex-shrink:0;"></span>
+          REHBER
+        </span>
+        <h2 class="section-title">Hangi Program <span style="color:var(--accent)">Size Daha Uygun?</span></h2>
+        <p class="section-subtitle">İhtiyacınıza göre size en uygun danışmanlık modelini keşfedin.</p>
+      </div>
+      <div class="guide-grid">
+        <div class="guide-card reveal-up">
+          <div class="guide-icon gi-weight"><i data-lucide="target" style="width:22px;height:22px;"></i></div>
+          <h3>Kilo Yönetimi Hedefliyorsanız</h3>
+          <p>Bilimsel yöntemlerle sağlıklı kilo verme, alma ve koruma programlarımızı inceleyin.</p>
+          <a href="/hizmetler/kilo-yonetimi" class="guide-link">Kilo Yönetimi <i data-lucide="arrow-right" style="width:14px;height:14px;"></i></a>
+        </div>
+        <div class="guide-card reveal-up">
+          <div class="guide-icon gi-laptop"><i data-lucide="monitor" style="width:22px;height:22px;"></i></div>
+          <h3>Online Takip İstiyorsanız</h3>
+          <p>Antalya dışı veya yoğun temponuz varsa online beslenme koçluğu tam size göre.</p>
+          <a href="/hizmetler/online-beslenme-koclugu" class="guide-link">Online Koçluk <i data-lucide="arrow-right" style="width:14px;height:14px;"></i></a>
+        </div>
+        <div class="guide-card reveal-up">
+          <div class="guide-icon gi-heart"><i data-lucide="heart-pulse" style="width:22px;height:22px;"></i></div>
+          <h3>Duygusal Yeme ile Çalışmak İstiyorsanız</h3>
+          <p>Stres, kaygı ve duygusal yeme döngüsünü kırmak için özel danışmanlık programı.</p>
+          <a href="/hizmetler/duygusal-yeme-danismanligi" class="guide-link">Duygusal Yeme Danışmanlığı <i data-lucide="arrow-right" style="width:14px;height:14px;"></i></a>
+        </div>
+        <div class="guide-card reveal-up">
+          <div class="guide-icon gi-leaf"><i data-lucide="activity" style="width:22px;height:22px;"></i></div>
+          <h3>Hormon &amp; Metabolizma Desteği Arıyorsanız</h3>
+          <p>PCOS, tiroid, insülin direnci ve metabolizma desteği için hormonal programları keşfedin.</p>
+          <a href="/hizmetler/hormonal-denge-programlari" class="guide-link">Hormonal Denge <i data-lucide="arrow-right" style="width:14px;height:14px;"></i></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PAGE END CTA ===== -->
+  <section class="cta-banner" id="ctaBanner">
+    <div class="cta-particles"></div>
+    <div class="container">
+      <div class="cta-content">
+        <h2 class="reveal-up">Hangi hizmetin size uygun olduğundan <span style="color:var(--accent)">emin değil misiniz?</span></h2>
+        <p class="reveal-up">Kısa bir ön görüşme ile hedeflerinize en uygun danışmanlık modelini birlikte netleştirebiliriz. Size özel çözüm için ilk adımı atın.</p>
+        <div class="cta-actions reveal-up">
+          <a href="/iletisim" class="btn btn-primary btn-lg"><span>Randevu Al</span></a>
+          <a href="https://wa.me/<%= site.phone.replace(/[^0-9]/g, '') %>?text=Merhaba%2C%20beslenme%20dan%C4%B1%C5%9Fmanl%C4%B1%C4%9F%C4%B1%20hakk%C4%B1nda%20bilgi%20almak%20istiyorum." class="btn btn-outline btn-lg" target="_blank" rel="noopener" style="background:rgba(255,255,255,0.08);border-color:rgba(255,255,255,0.18);color:#fff;">
+            <i data-lucide="message-circle" style="width:16px;height:16px;"></i>
+            <span>WhatsApp'tan Yaz</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<%- include('partials/footer') %>

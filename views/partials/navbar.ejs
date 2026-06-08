@@ -1,0 +1,145 @@
+<header class="header" id="header">
+  <div class="header-top">
+    <div class="container">
+      <div class="header-top-content">
+        <div class="header-top-left">
+          <i data-lucide="sparkles" style="width:13px;height:13px;"></i>
+          <span>Online ve Yüz Yüze Danışmanlık</span>
+        </div>
+        <div class="header-top-center">
+          <span>Sağlıklı Yaşam İçin İlk Adımı Bugün Atın</span>
+        </div>
+        <div class="header-top-right">
+          <a href="tel:<%= site.phone.replace(/[^0-9+]/g, '') %>" class="header-phone">
+            <i data-lucide="phone" style="width:13px;height:13px;"></i>
+            <span><%= site.phone %></span>
+          </a>
+          <span class="header-top-divider"></span>
+          <div class="header-social-group">
+            <a href="https://wa.me/905495030794?text=Merhaba%2C%20beslenme%20dan%C4%B1%C5%9Fmanl%C4%B1%C4%9F%C4%B1%20hakk%C4%B1nda%20bilgi%20almak%20istiyorum." target="_blank" rel="noopener" aria-label="WhatsApp" class="header-top-social">
+              <i data-lucide="message-circle" style="width:13px;height:13px;"></i>
+            </a>
+            <a href="https://www.instagram.com/diyetisyenfulyasari/" target="_blank" rel="noopener" aria-label="Instagram" class="header-top-social">
+              <i data-lucide="instagram" style="width:13px;height:13px;"></i>
+            </a>
+            <a href="https://www.facebook.com/people/Diyetisyen-Fulya-Sar%C4%B1/100089580203280/" target="_blank" rel="noopener" aria-label="Facebook" class="header-top-social">
+              <i data-lucide="facebook" style="width:13px;height:13px;"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <nav class="navbar" id="navbar">
+    <div class="container">
+      <a href="/" class="logo">
+        <img src="/images/fulya-sari-logo.png" alt="Fulya Sarı" class="nav-logo">
+      </a>
+
+      <button class="nav-toggle" id="navToggle" aria-label="Menüyü Aç/Kapat">
+        <span></span><span></span><span></span>
+      </button>
+
+      <ul class="nav-menu" id="navMenu">
+        <li><a href="/">Ana Sayfa</a></li>
+        <li class="has-mega">
+          <a href="/hizmetler">Hizmetler <i data-lucide="chevron-down" style="width:12px;height:12px;"></i></a>
+          <div class="mega-menu">
+            <div class="mega-inner">
+              <div class="mega-col">
+                <h4>Diyet Programları</h4>
+                <a href="/hizmetler/noroendokrin-beslenme"><i data-lucide="brain" style="width:16px;height:16px;"></i> Nöroendokrin Beslenme</a>
+                <a href="/hizmetler/kilo-yonetimi"><i data-lucide="weight" style="width:16px;height:16px;"></i> Kilo Yönetimi</a>
+                <a href="/hizmetler/duygusal-yeme-danismanligi"><i data-lucide="heart" style="width:16px;height:16px;"></i> Duygusal Yeme</a>
+              </div>
+              <div class="mega-col">
+                <h4>Özel Programlar</h4>
+                <a href="/hizmetler/hormonal-denge-programlari"><i data-lucide="leaf" style="width:16px;height:16px;"></i> Hormonal Denge</a>
+                <a href="/hizmetler/online-beslenme-koclugu"><i data-lucide="laptop" style="width:16px;height:16px;"></i> Online Koçluk</a>
+                <a href="/hizmetler/sporcu-beslenmesi"><i data-lucide="dumbbell" style="width:16px;height:16px;"></i> Sporcu Beslenmesi</a>
+              </div>
+              <div class="mega-col mega-cta">
+                <h4>Size Özel Program</h4>
+                <p>13 yıllık deneyimle size özel beslenme programı hazırlıyoruz.</p>
+                <a href="/iletisim" class="btn btn-primary">Hemen Başlayın</a>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li><a href="/hakkimizda">Hakkımızda</a></li>
+        <li><a href="/makaleler">Makaleler</a></li>
+        <li><a href="/iletisim">İletişim</a></li>
+        <li class="nav-cta-wrap">
+          <a href="/iletisim" class="nav-cta">
+            <i data-lucide="calendar-check" style="width:18px;height:18px;"></i>
+            <span>Randevu Al</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+</header>
+
+<!-- Body-level mobile drawer (moved to body via JS) -->
+<div id="mobileDrawer" class="mobile-drawer" aria-hidden="true">
+  <div class="mobile-drawer-header">
+    <span class="mobile-drawer-title">
+      <span class="mobile-drawer-title-dot"></span>
+      Menü
+    </span>
+    <button class="mobile-drawer-close" id="mobileDrawerClose" aria-label="Menüyü Kapat">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M18 6L6 18M6 6l12 12"></path>
+      </svg>
+    </button>
+  </div>
+  <div class="mobile-drawer-body">
+    <ul class="mobile-drawer-links">
+      <li><a href="/">Ana Sayfa</a></li>
+      <li class="mobile-drawer-has-sub">
+        <a href="/hizmetler" class="mobile-drawer-sub-toggle">
+          <span>Hizmetler</span>
+          <svg class="mobile-drawer-chevron" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M6 9l6 6 6-6"></path>
+          </svg>
+        </a>
+        <ul class="mobile-drawer-sub">
+          <li><a href="/hizmetler/noroendokrin-beslenme">Nöroendokrin Beslenme</a></li>
+          <li><a href="/hizmetler/kilo-yonetimi">Kilo Yönetimi</a></li>
+          <li><a href="/hizmetler/duygusal-yeme-danismanligi">Duygusal Yeme</a></li>
+          <li><a href="/hizmetler/hormonal-denge-programlari">Hormonal Denge</a></li>
+          <li><a href="/hizmetler/online-beslenme-koclugu">Online Koçluk</a></li>
+          <li><a href="/hizmetler/sporcu-beslenmesi">Sporcu Beslenmesi</a></li>
+        </ul>
+      </li>
+      <li><a href="/hakkimizda">Hakkımızda</a></li>
+      <li><a href="/makaleler">Makaleler</a></li>
+      <li><a href="/iletisim">İletişim</a></li>
+    </ul>
+    <div class="mobile-drawer-cta">
+      <a href="/iletisim" class="btn btn-primary mobile-drawer-cta-btn">
+        <i data-lucide="calendar-check" style="width:18px;height:18px;"></i>
+        <span>Randevu Al</span>
+      </a>
+    </div>
+  </div>
+  <div class="mobile-drawer-footer">
+    <a href="tel:<%= site.phone.replace(/[^0-9+]/g, '') %>" class="mobile-drawer-phone">
+      <i data-lucide="phone" style="width:14px;height:14px;"></i>
+      <span><%= site.phone %></span>
+    </a>
+    <div class="mobile-drawer-social">
+      <a href="https://wa.me/<%= site.phone.replace(/[^0-9]/g, '') %>?text=Merhaba%2C%20beslenme%20dan%C4%B1%C5%9Fmanl%C4%B1%C4%9F%C4%B1%20hakk%C4%B1nda%20bilgi%20almak%20istiyorum." target="_blank" rel="noopener" aria-label="WhatsApp" class="mobile-drawer-social-link">
+        <i data-lucide="message-circle" style="width:16px;height:16px;"></i>
+      </a>
+      <a href="https://www.instagram.com/diyetisyenfulyasari/" target="_blank" rel="noopener" aria-label="Instagram" class="mobile-drawer-social-link">
+        <i data-lucide="instagram" style="width:16px;height:16px;"></i>
+      </a>
+      <a href="https://www.facebook.com/people/Diyetisyen-Fulya-Sar%C4%B1/100089580203280/" target="_blank" rel="noopener" aria-label="Facebook" class="mobile-drawer-social-link">
+        <i data-lucide="facebook" style="width:16px;height:16px;"></i>
+      </a>
+    </div>
+  </div>
+</div>
+<div id="mobileDrawerOverlay" class="mobile-drawer-overlay" aria-hidden="true"></div>

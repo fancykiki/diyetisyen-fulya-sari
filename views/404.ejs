@@ -1,0 +1,38 @@
+<%- include('partials/header') %>
+<%- include('partials/navbar') %>
+
+<main>
+  <section class="page-hero">
+    <div class="container">
+      <div class="page-hero-content">
+        <h1>Sayfa Bulunamadı</h1>
+        <div class="breadcrumb">
+          <a href="/">Ana Sayfa</a> / <span>404</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div style="text-align:center;max-width:600px;margin:0 auto;">
+        <i data-lucide="leaf" style="width:80px;height:80px;color:var(--accent);margin-bottom:16px;opacity:0.3;"></i>
+        <h2 style="font-family:var(--font-heading);font-size:100px;color:var(--primary);line-height:1;">404</h2>
+        <p style="font-size:18px;color:var(--text-light);margin:8px 0 32px;">Aradığınız sayfa mevcut değil veya taşınmış olabilir.</p>
+        <a href="/" class="btn btn-primary" style="margin-bottom:48px;"><span>Ana Sayfaya Dön</span></a>
+
+        <div style="border-top:1px solid var(--light-gray);padding-top:32px;">
+          <p style="font-size:14px;color:var(--text-light);margin-bottom:20px;">Bu sayfalar ilginizi çekebilir:</p>
+          <div style="display:flex;flex-wrap:wrap;justify-content:center;gap:12px;">
+            <a href="/hizmetler" class="btn btn-outline" style="border-color:var(--light-gray);color:var(--text);">Hizmetlerimiz</a>
+            <a href="/makaleler" class="btn btn-outline" style="border-color:var(--light-gray);color:var(--text);">Makaleler</a>
+            <a href="/hakkimizda" class="btn btn-outline" style="border-color:var(--light-gray);color:var(--text);">Hakkımızda</a>
+            <a href="/iletisim" class="btn btn-outline" style="border-color:var(--light-gray);color:var(--text);">İletişim</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<%- include('partials/footer') %>
