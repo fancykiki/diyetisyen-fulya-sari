@@ -1,0 +1,19 @@
+{
+  "version": 1,
+  "kind": "html",
+  "title": "hero-concept-c.html",
+  "entry": "hero-concept-c.html",
+  "renderer": "html",
+  "status": "complete",
+  "exports": [
+    "html",
+    "pdf",
+    "zip"
+  ],
+  "createdAt": "2026-06-10T13:39:28.102Z",
+  "updatedAt": "2026-06-10T13:39:28.102Z",
+  "metadata": {
+    "inferred": true,
+    "reconciled": true
+  }
+}

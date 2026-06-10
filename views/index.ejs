@@ -12,301 +12,199 @@
 <% } %>
 
 <main>
-  <!-- HERO SLIDER -->
+  <!-- HERO — Konsept A: Light Premium Wellness -->
   <section class="hero" id="hero">
-    <div class="hero-slider" id="heroSlider">
-      <% slider.forEach((slide, index) => { %>
-      <div class="hero-slide<% if(index === 0) { %> active<% } %>">
-        <div class="hero-slide-bg" style="background-image: url('<%= slide.image %>');"></div>
-        <div class="hero-slide-vignette" aria-hidden="true"></div>
-        <div class="hero-cinematic-grain" aria-hidden="true"></div>
-        <div class="hero-overlay"></div>
-        <div class="container">
-          <div class="hero-content">
-            <div class="hero-panel">
-              <div class="hero-panel-shine" aria-hidden="true"></div>
-              <div class="hero-panel-edge" aria-hidden="true"></div>
-              <div class="hero-panel-pattern"></div>
-              <div class="hero-panel-orbit"></div>
-              <div class="hero-panel-inner">
-              <div class="hero-panel-tag"><%= slide.tag || 'DİYETİSYEN FULYA SARI' %></div>
-              <h1 class="hero-panel-title"><%= slide.title %></h1>
-              <p class="hero-panel-desc"><%= slide.subtitle %></p>
-              <div class="hero-features">
-                <% slide.features.forEach(f => { %>
-                <div class="hero-feature hero-feature-<%= f.color %>">
-                  <div class="hero-feature-icon">
-                     <% if (f.icon === 'apple') { %>
-                      <svg viewBox="0 0 24 24" width="22" height="22" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M12 6C12 3 14.5 1.5 16.5 2.5C17.5 3 17.5 5.5 15.5 6.5C14.5 7 13 6.5 12 6Z" fill="url(#leafGrad)" />
-                        <path d="M12 7C11.5 5.5 12 4.5 12.5 3.5" stroke="#B94F43" stroke-width="1.5" stroke-linecap="round" />
-                        <path d="M12 7.5C10.5 7.5 9 6.5 7 6.5C4 6.5 2 9 2 12.5C2 17 6.5 21.5 12 22C17.5 21.5 22 17 22 12.5C22 9 20 6.5 17 6.5C15 6.5 13.5 7.5 12 7.5Z" fill="url(#appleGrad)" />
-                        <path d="M6 10C5.5 11 5.5 12.5 6 13.5C6.2 14 5.8 14.5 5.3 14.3C4.6 14 4.2 13 4.2 12C4.2 10.5 4.8 9.5 5.5 9.1C6 8.9 6.3 9.4 6 10Z" fill="#FFFFFF" opacity="0.4" />
-                        <defs>
-                          <linearGradient id="appleGrad" x1="2" y1="6.5" x2="22" y2="22" gradientUnits="userSpaceOnUse"><stop offset="0%" stop-color="#D96C5F" /><stop offset="100%" stop-color="#B94F43" /></linearGradient>
-                          <linearGradient id="leafGrad" x1="12" y1="1.5" x2="17.5" y2="6.5" gradientUnits="userSpaceOnUse"><stop offset="0%" stop-color="#F8E1DD" /><stop offset="100%" stop-color="#D96C5F" /></linearGradient>
-                        </defs>
-                      </svg>
-                    <% } else if (f.icon === 'clipboard-list') { %>
-                      <svg viewBox="0 0 24 24" width="22" height="22" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <rect x="4" y="3" width="16" height="18" rx="3" fill="url(#boardGrad)" />
-                        <rect x="6" y="6" width="12" height="13" rx="1.5" fill="#FFFFFF" />
-                        <rect x="8" y="9" width="8" height="1.5" rx="0.75" fill="#EDE7DE" />
-                        <rect x="10" y="12" width="6" height="1.5" rx="0.75" fill="#EDE7DE" />
-                        <rect x="10" y="15" width="6" height="1.5" rx="0.75" fill="#EDE7DE" />
-                        <circle cx="8" cy="12.75" r="1.25" fill="#C99A4A" />
-                        <circle cx="8" cy="15.75" r="1.25" fill="#C99A4A" />
-                        <path d="M9 2H15V4H9V2Z" fill="url(#clipGrad)" />
-                        <rect x="10" y="3.5" width="4" height="1" rx="0.5" fill="#9A7130" />
-                        <defs>
-                          <linearGradient id="boardGrad" x1="4" y1="3" x2="20" y2="21" gradientUnits="userSpaceOnUse"><stop offset="0%" stop-color="#C99A4A" /><stop offset="100%" stop-color="#9A7130" /></linearGradient>
-                          <linearGradient id="clipGrad" x1="9" y1="2" x2="15" y2="4" gradientUnits="userSpaceOnUse"><stop offset="0%" stop-color="#F4E6CA" /><stop offset="100%" stop-color="#C99A4A" /></linearGradient>
-                        </defs>
-                      </svg>
-                    <% } else if (f.icon === 'laptop') { %>
-                      <svg viewBox="0 0 24 24" width="22" height="22" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <rect x="4" y="4" width="16" height="11" rx="2" fill="#2C2822" />
-                        <rect x="5.5" y="5.5" width="13" height="8" rx="0.5" fill="url(#screenGrad)" />
-                        <circle cx="12" cy="8.5" r="2" fill="#FFFFFF" opacity="0.8" />
-                        <path d="M9 12.5C9 11 10.3 10.5 12 10.5C13.7 10.5 15 11 15 12.5" fill="#FFFFFF" opacity="0.8" />
-                        <path d="M2 16.5C2 15.7 2.7 15 3.5 15H20.5C21.3 15 22 15.7 22 16.5V17C22 18.1 21.1 19 20 19H4C2.9 19 2 18.1 2 17V16.5Z" fill="url(#baseGrad)" />
-                        <rect x="10" y="15" width="4" height="1" rx="0.5" fill="#1E3328" />
-                        <defs>
-                          <linearGradient id="screenGrad" x1="5.5" y1="5.5" x2="18.5" y2="13.5" gradientUnits="userSpaceOnUse"><stop offset="0%" stop-color="#8DC0CD" /><stop offset="100%" stop-color="#4F94A5" /></linearGradient>
-                          <linearGradient id="baseGrad" x1="2" y1="15" x2="22" y2="19" gradientUnits="userSpaceOnUse"><stop offset="0%" stop-color="#DDEFF3" /><stop offset="100%" stop-color="#C8DDE3" /></linearGradient>
-                        </defs>
-                      </svg>
-                    <% } else if (f.icon === 'scale') { %>
-                      <svg viewBox="0 0 24 24" width="22" height="22" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <rect x="3" y="3" width="18" height="18" rx="3" fill="url(#scaleGrad)" stroke="url(#scaleBorder)" stroke-width="1.5" />
-                        <rect x="5" y="6" width="3" height="12" rx="1.5" fill="#EDE7DE" />
-                        <rect x="16" y="6" width="3" height="12" rx="1.5" fill="#EDE7DE" />
-                        <rect x="9" y="5" width="6" height="3" rx="1" fill="#2C2822" />
-                        <rect x="10.5" y="6" width="3" height="1" rx="0.5" fill="#D96C5F" />
-                        <defs>
-                          <linearGradient id="scaleGrad" x1="3" y1="3" x2="21" y2="21" gradientUnits="userSpaceOnUse"><stop offset="0%" stop-color="#F8E1DD" /><stop offset="100%" stop-color="#FFFDF8" /></linearGradient>
-                          <linearGradient id="scaleBorder" x1="3" y1="3" x2="21" y2="21" gradientUnits="userSpaceOnUse"><stop offset="0%" stop-color="#D96C5F" /><stop offset="100%" stop-color="#B94F43" /></linearGradient>
-                        </defs>
-                      </svg>
-                    <% } else if (f.icon === 'utensils-crossed') { %>
-                      <svg viewBox="0 0 24 24" width="22" height="22" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <g transform="rotate(45 12 12)">
-                          <path d="M12 4C10.5 4 9.5 5.5 9.5 7.5C9.5 9.5 10.5 11 12 11C13.5 11 14.5 9.5 14.5 7.5C14.5 5.5 13.5 4 12 4Z" fill="url(#spoonGrad)" />
-                          <rect x="11.25" y="11" width="1.5" height="9" rx="0.75" fill="url(#handleGrad)" />
-                        </g>
-                        <g transform="rotate(-45 12 12)">
-                          <path d="M12 11C13.5 11 14.5 9.5 14.5 7.5V4H13.25V7.5C13.25 8.5 12.75 9 12 9C11.25 9 10.75 8.5 10.75 7.5V4H9.5V7.5C9.5 9.5 10.5 11 12 11Z" fill="url(#forkGrad)" />
-                          <rect x="11.35" y="4" width="1.3" height="4.5" fill="url(#forkGrad)" />
-                          <rect x="11.25" y="11" width="1.5" height="9" rx="0.75" fill="url(#handleGrad)" />
-                        </g>
-                        <defs>
-                          <linearGradient id="spoonGrad" x1="9.5" y1="4" x2="14.5" y2="11" gradientUnits="userSpaceOnUse"><stop offset="0%" stop-color="#C99A4A" /><stop offset="100%" stop-color="#9A7130" /></linearGradient>
-                          <linearGradient id="forkGrad" x1="9.5" y1="4" x2="14.5" y2="11" gradientUnits="userSpaceOnUse"><stop offset="0%" stop-color="#9A7130" /><stop offset="100%" stop-color="#7A5B30" /></linearGradient>
-                          <linearGradient id="handleGrad" x1="11.25" y1="11" x2="12.75" y2="20" gradientUnits="userSpaceOnUse"><stop offset="0%" stop-color="#DDBA7A" /><stop offset="100%" stop-color="#9A7130" /></linearGradient>
-                        </defs>
-                      </svg>
-                    <% } else if (f.icon === 'user-check') { %>
-                      <svg viewBox="0 0 24 24" width="22" height="22" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <circle cx="10" cy="8" r="4" fill="url(#userGrad)" />
-                        <path d="M4 18C4 15.2 6.8 14 10 14C11.5 14 12.8 14.3 13.8 14.8" stroke="url(#userGrad)" stroke-width="2" stroke-linecap="round" />
-                        <circle cx="17" cy="17" r="5" fill="#FFFFFF" />
-                        <circle cx="17" cy="17" r="4" fill="#4F94A5" />
-                        <path d="M15.5 17L16.5 18L18.5 16" stroke="#FFFFFF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                        <defs>
-                          <linearGradient id="userGrad" x1="4" y1="4" x2="15" y2="18" gradientUnits="userSpaceOnUse"><stop offset="0%" stop-color="#8DC0CD" /><stop offset="100%" stop-color="#4F94A5" /></linearGradient>
-                        </defs>
-                      </svg>
-                    <% } else if (f.icon === 'calendar') { %>
-                      <svg viewBox="0 0 24 24" width="22" height="22" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <rect x="3" y="4" width="18" height="17" rx="3" fill="#FFFDF8" stroke="#E2D9CE" stroke-width="1.5" />
-                        <path d="M3 7C3 5.3 4.3 4 6 4H18C19.7 4 21 5.3 21 7V9H3V7Z" fill="url(#calHeaderGrad)" />
-                        <rect x="7" y="2" width="2" height="4" rx="1" fill="#6B6258" />
-                        <rect x="15" y="2" width="2" height="4" rx="1" fill="#6B6258" />
-                        <rect x="6" y="12" width="2" height="2" rx="0.5" fill="#EDE7DE" />
-                        <rect x="11" y="12" width="2" height="2" rx="0.5" fill="#EDE7DE" />
-                        <rect x="16" y="12" width="2" height="2" rx="0.5" fill="#EDE7DE" />
-                        <rect x="6" y="16" width="2" height="2" rx="0.5" fill="#EDE7DE" />
-                        <rect x="11" y="16" width="2" height="2" rx="0.5" fill="#C99A4A" />
-                        <rect x="16" y="16" width="2" height="2" rx="0.5" fill="#EDE7DE" />
-                        <defs>
-                          <linearGradient id="calHeaderGrad" x1="3" y1="4" x2="21" y2="9" gradientUnits="userSpaceOnUse"><stop offset="0%" stop-color="#C99A4A" /><stop offset="100%" stop-color="#9A7130" /></linearGradient>
-                        </defs>
-                      </svg>
-                    <% } else if (f.icon === 'heart-pulse') { %>
-                      <svg viewBox="0 0 24 24" width="22" height="22" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M12 21.35L10.55 20.03C5.4 15.36 2 12.28 2 8.5C2 5.42 4.42 3 7.5 3C9.24 3 10.91 3.81 12 5.09C13.09 3.81 14.76 3 16.5 3C19.58 3 22 5.42 22 8.5C22 12.28 18.6 15.36 13.45 20.04L12 21.35Z" fill="url(#heartGrad)" />
-                        <path d="M4 10H8.5L9.5 7.5L11 13.5L12.5 6L13.5 11.5L14.5 10H19" stroke="#FFFFFF" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" />
-                        <defs>
-                          <linearGradient id="heartGrad" x1="2" y1="3" x2="22" y2="21" gradientUnits="userSpaceOnUse"><stop offset="0%" stop-color="#D96C5F" /><stop offset="100%" stop-color="#B94F43" /></linearGradient>
-                        </defs>
-                      </svg>
-                    <% } else { %>
-                      <i data-lucide="<%= f.icon %>"></i>
-                    <% } %>
-                  </div>
-                  <span class="hero-feature-label"><%= f.label %></span>
-                </div>
-                <% }); %>
-              </div>
-              <div class="hero-actions">
-                <a href="<%= slide.ctaLink %>" class="btn btn-primary"><%= slide.ctaText %></a>
-                <a href="<%= slide.ctaSecondaryLink %>" class="btn btn-outline hero-btn-outline"><%= slide.ctaSecondaryText %></a>
-              </div>
-              </div>
+
+    <!-- Layered background -->
+    <div class="hero-bg-layer">
+      <div class="hero-bg-blob hero-bg-blob-1"></div>
+      <div class="hero-bg-blob hero-bg-blob-2"></div>
+      <div class="hero-bg-blob hero-bg-blob-3"></div>
+    </div>
+
+    <!-- Parallax soft shapes -->
+    <div class="hero-parallax-shapes" aria-hidden="true">
+      <div class="parallax-shape ps-1" data-speed="0.02"></div>
+      <div class="parallax-shape ps-2" data-speed="0.03"></div>
+      <div class="parallax-shape ps-3" data-speed="0.015"></div>
+    </div>
+
+    <!-- Noise grain -->
+    <div class="hero-grain" aria-hidden="true"></div>
+
+    <!-- Nutrition pattern dots -->
+    <div class="hero-nutrition-pattern" aria-hidden="true"></div>
+
+    <!-- Soft overlay -->
+    <div class="hero-overlay"></div>
+
+    <div class="container">
+      <div class="hero-wrapper">
+
+        <!-- Left Content -->
+        <div class="hero-left">
+          <span class="hero-badge hero-anim hero-anim-delay-1">
+            <span class="hero-badge-dot"></span>
+            ANTALYA &amp; ONLINE BESLENME DANIŞMANLIĞI
+          </span>
+
+          <h1 class="hero-title hero-anim hero-anim-delay-2">
+            <span class="line" style="--line-i:0"><span>Dyt. Fulya Sarı ile</span></span>
+            <span class="line" style="--line-i:1"><span>Kişiye Özel Beslenme</span></span>
+            <span class="line" style="--line-i:2"><span>Danışmanlığı</span></span>
+          </h1>
+
+          <div class="hero-rotator hero-anim hero-anim-delay-3">
+            <span class="hero-rotator-prefix">Uzmanlık:</span>
+            <div class="hero-rotator-words" id="wordRotator">
+              <span class="rotator-word active">Kilo Yönetimi</span>
+              <span class="rotator-word">Online Koçluk</span>
+              <span class="rotator-word">Yüz Yüze Görüşme</span>
+              <span class="rotator-word">Sürdürülebilirlik</span>
+              <span class="rotator-word">Öğün Planlaması</span>
+              <span class="rotator-word">Takip ve Motivasyon</span>
+            </div>
+          </div>
+
+          <p class="hero-desc hero-anim hero-anim-delay-4">
+            Yaşam tarzınıza, hedeflerinize ve ihtiyaçlarınıza uygun; sürdürülebilir, kişiye özel beslenme programlarıyla sağlıklı yaşam yolculuğunuzda yanınızdayız.
+          </p>
+
+          <div class="hero-actions hero-anim hero-anim-delay-5">
+            <a href="/iletisim" class="btn-hero-primary">Randevu Al</a>
+            <a href="/hizmetler" class="btn-hero-outline">Programları İncele</a>
+          </div>
+
+          <div class="hero-pills hero-anim hero-anim-delay-6">
+            <div class="hero-pill">
+              <span class="hero-pill-icon"><i data-lucide="laptop" style="width:14px;height:14px;"></i></span>
+              <span>Online &amp; Yüz Yüze</span>
+            </div>
+            <div class="hero-pill">
+              <span class="hero-pill-icon"><i data-lucide="user-check" style="width:14px;height:14px;"></i></span>
+              <span>Kişiye Özel Program</span>
+            </div>
+            <div class="hero-pill">
+              <span class="hero-pill-icon"><i data-lucide="refresh-cw" style="width:14px;height:14px;"></i></span>
+              <span>Takip &amp; Destek</span>
             </div>
           </div>
         </div>
+
+        <!-- Right: Portrait + Floating Cards -->
+        <div class="hero-right">
+          <div class="hero-portrait">
+
+            <!-- Abstract orbit rings behind portrait -->
+            <div class="hero-orbit-ring orbit-1" aria-hidden="true"></div>
+            <div class="hero-orbit-ring orbit-2" aria-hidden="true"></div>
+
+            <!-- Status ring around portrait -->
+            <div class="hero-status-ring" aria-hidden="true"></div>
+
+            <!-- Floating glass cards around portrait -->
+            <div class="hero-floating-cards">
+              <div class="floating-card fc-1">
+                <i data-lucide="leaf" style="width:14px;height:14px;"></i>
+                <span>Sürdürülebilir Sağlık</span>
+              </div>
+              <div class="floating-card fc-2">
+                <i data-lucide="heart" style="width:14px;height:14px;"></i>
+                <span>Birebir Koçluk</span>
+              </div>
+              <div class="floating-card fc-3">
+                <i data-lucide="shield" style="width:14px;height:14px;"></i>
+                <span>Yaşam Boyu Destek</span>
+              </div>
+              <div class="floating-card fc-4">
+                <i data-lucide="star" style="width:14px;height:14px;"></i>
+                <span>Güvenilir Danışmanlık</span>
+              </div>
+            </div>
+
+            <div class="hero-portrait-card">
+              <img src="/images/hakkimizda.jpeg?v=2" alt="Dyt. Fulya Sarı" class="hero-portrait-img" loading="eager">
+              <div class="hero-portrait-frame"></div>
+              <div class="hero-portrait-glow"></div>
+            </div>
+            <div class="hero-portrait-badge">
+              <span class="badge-number">2016</span>
+              <span class="badge-text">DAN BERİ</span>
+            </div>
+            <div class="hero-portrait-info pi-1">
+              <i data-lucide="map-pin" style="width:14px;height:14px;"></i>
+              <span>Antalya</span>
+            </div>
+            <div class="hero-portrait-info pi-2">
+              <i data-lucide="globe" style="width:14px;height:14px;"></i>
+              <span>Online</span>
+            </div>
+          </div>
+        </div>
+
       </div>
-      <% }); %>
     </div>
 
-    <div class="slider-progress"><div class="slider-progress-bar" id="sliderProgressBar"></div></div>
-
-    <div class="slider-counter" id="sliderCounter">
-      <span class="slider-counter-current" id="sliderCounterCurrent">01</span>
-      <span class="slider-counter-line"></span>
-      <span class="slider-counter-total"><%= String(slider.length).padStart(2, '0') %></span>
-    </div>
-
-    <div class="slider-controls">
-      <div class="slider-ui-shell">
-      <button class="slider-btn prev" id="sliderPrev" aria-label="Önceki"><i data-lucide="chevron-left" style="width:16px;height:16px;"></i></button>
-      <div class="slider-dots" id="sliderDots">
-        <% slider.forEach((_, index) => { %>
-        <span class="dot<% if(index === 0) { %> active<% } %>" data-index="<%= index %>"></span>
-        <% }); %>
+    <!-- Marquee expertise strip -->
+    <div class="hero-marquee">
+      <div class="hero-marquee-track" id="marqueeTrack">
+        <span class="hero-marquee-item">Bilimsel Yaklaşım</span>
+        <span class="hero-marquee-item">Hormonal Denge</span>
+        <span class="hero-marquee-item">Bağırsak Sağlığı</span>
+        <span class="hero-marquee-item">Duygusal Yeme</span>
+        <span class="hero-marquee-item">Sporcu Beslenmesi</span>
+        <span class="hero-marquee-item">Glisemik Kontrol</span>
+        <span class="hero-marquee-item">Vücut Analizi</span>
+        <span class="hero-marquee-item">Anti-enflamatuar</span>
+        <span class="hero-marquee-item">Metabolizma Desteği</span>
+        <span class="hero-marquee-item">Vitamin Dengesi</span>
+        <span class="hero-marquee-item">Nöroendokrin Beslenme</span>
+        <span class="hero-marquee-item">Uyku &amp; Hormon</span>
+        <span class="hero-marquee-item">Sağlıklı Alışkanlıklar</span>
+        <span class="hero-marquee-item">Fonksiyonel Tıp</span>
+        <span class="hero-marquee-item">Bilimsel Yaklaşım</span>
+        <span class="hero-marquee-item">Hormonal Denge</span>
+        <span class="hero-marquee-item">Bağırsak Sağlığı</span>
+        <span class="hero-marquee-item">Duygusal Yeme</span>
+        <span class="hero-marquee-item">Sporcu Beslenmesi</span>
+        <span class="hero-marquee-item">Glisemik Kontrol</span>
+        <span class="hero-marquee-item">Vücut Analizi</span>
+        <span class="hero-marquee-item">Anti-enflamatuar</span>
+        <span class="hero-marquee-item">Metabolizma Desteği</span>
+        <span class="hero-marquee-item">Vitamin Dengesi</span>
+        <span class="hero-marquee-item">Nöroendokrin Beslenme</span>
+        <span class="hero-marquee-item">Uyku &amp; Hormon</span>
+        <span class="hero-marquee-item">Sağlıklı Alışkanlıklar</span>
+        <span class="hero-marquee-item">Fonksiyonel Tıp</span>
       </div>
-      <button class="slider-btn next" id="sliderNext" aria-label="Sonraki"><i data-lucide="chevron-right" style="width:16px;height:16px;"></i></button>
-      </div>
     </div>
 
-    <div class="slider-paused-indicator" id="sliderPausedIndicator">
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-        <rect x="6" y="4" width="4" height="16"></rect>
-        <rect x="14" y="4" width="4" height="16"></rect>
-      </svg>
-    </div>
-
-    <a href="#introSection" class="hero-scroll-indicator" aria-label="Sonraki bölüme kaydır">
+    <!-- Scroll indicator -->
+    <a href="#processSection" class="hero-scroll-indicator" aria-label="Sonraki bölüme kaydır">
       <span>Aşağı Kaydır</span>
       <div class="scroll-mouse"><div class="scroll-dot"></div></div>
     </a>
   </section>
 
-  <!-- PREMIUM INTRO / MANIFESTO -->
-  <section class="intro-section" id="introSection">
-    <div class="intro-bg-glow"></div>
-
-    <!-- Floating decorative elements -->
-    <div class="intro-float intro-float-1" aria-hidden="true">
-      <svg viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path d="M60 16C54 10 46 7 39 7C30 7 24 12 24 20C24 34 38 42 60 44C82 42 96 34 96 20C96 12 90 7 81 7C74 7 66 10 60 16Z" fill="url(#iaGrad)" opacity="0.30"/>
-        <path d="M28 38C18 48 16 64 18 82C20 100 36 112 60 114C84 112 100 100 102 82C104 64 102 48 92 38C82 28 70 23 60 21C50 23 38 28 28 38Z" fill="url(#iaGrad)" opacity="0.18"/>
-        <circle cx="60" cy="80" r="14" fill="url(#iaGrad)" opacity="0.15"/>
-        <path d="M60 21C56 16 48 12 41 11L43 17C48 18 54 21 56 25" fill="url(#igGrad)" opacity="0.30"/>
-        <path d="M60 21C66 12 76 7 84 7L82 13C76 14 68 18 64 25" fill="url(#igGrad)" opacity="0.30"/>
-        <defs>
-          <linearGradient id="iaGrad" x1="18" y1="7" x2="102" y2="114"><stop offset="0%" stop-color="#D96C5F"/><stop offset="100%" stop-color="#B94F43"/></linearGradient>
-          <linearGradient id="igGrad" x1="41" y1="7" x2="84" y2="25"><stop offset="0%" stop-color="#315C45"/><stop offset="100%" stop-color="#4A7A5C"/></linearGradient>
-        </defs>
-      </svg>
-    </div>
-    <div class="intro-float intro-float-2" aria-hidden="true">
-      <svg viewBox="0 0 140 140" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <circle cx="70" cy="70" r="54" stroke="url(#ringGrad)" stroke-width="1.2" opacity="0.25"/>
-        <circle cx="70" cy="70" r="38" stroke="url(#ringGrad)" stroke-width="0.8" opacity="0.18" stroke-dasharray="4 6"/>
-        <circle cx="70" cy="70" r="12" fill="url(#ringGrad)" opacity="0.20"/>
-        <circle cx="70" cy="70" r="4" fill="url(#ringGrad)" opacity="0.35"/>
-        <defs>
-          <linearGradient id="ringGrad" x1="16" y1="16" x2="124" y2="124"><stop offset="0%" stop-color="#D96C5F"/><stop offset="50%" stop-color="#C99A4A"/><stop offset="100%" stop-color="#4F94A5"/></linearGradient>
-        </defs>
-      </svg>
-    </div>
-    <div class="intro-float intro-float-3" aria-hidden="true">
-      <svg viewBox="0 0 110 110" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path d="M55 96C55 96 88 64 90 38C92 16 76 10 66 12C56 14 48 22 46 28C42 20 30 12 20 14C10 16 4 28 6 40C8 56 24 72 55 96Z" fill="url(#lfGrad)" opacity="0.22"/>
-        <path d="M55 96C55 96 80 46 82 26" stroke="var(--primary)" stroke-width="1.5" stroke-linecap="round" opacity="0.20"/>
-        <path d="M30 34C30 34 38 18 50 14" stroke="var(--color-sage)" stroke-width="1.2" stroke-linecap="round" opacity="0.15"/>
-        <defs>
-          <linearGradient id="lfGrad" x1="10" y1="10" x2="55" y2="96"><stop offset="0%" stop-color="#4F7A5E"/><stop offset="100%" stop-color="#315C45"/></linearGradient>
-        </defs>
-      </svg>
-    </div>
-    <div class="intro-float intro-float-4" aria-hidden="true">
-      <svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <circle cx="50" cy="50" r="40" stroke="url(#seedGrad)" stroke-width="0.8" opacity="0.20"/>
-        <circle cx="35" cy="40" r="5" fill="url(#seedGrad)" opacity="0.22"/>
-        <circle cx="65" cy="38" r="4" fill="url(#seedGrad)" opacity="0.18"/>
-        <circle cx="50" cy="58" r="6" fill="url(#seedGrad)" opacity="0.25"/>
-        <circle cx="42" cy="52" r="3" fill="url(#seedGrad)" opacity="0.15"/>
-        <circle cx="58" cy="54" r="3.5" fill="url(#seedGrad)" opacity="0.20"/>
-        <circle cx="50" cy="68" r="2.5" fill="url(#seedGrad)" opacity="0.15"/>
-        <defs>
-          <linearGradient id="seedGrad" x1="16" y1="16" x2="84" y2="84"><stop offset="0%" stop-color="#C99A4A"/><stop offset="50%" stop-color="#D96C5F"/><stop offset="100%" stop-color="#4F7A5E"/></linearGradient>
-        </defs>
-      </svg>
-    </div>
-
+  <!-- DANIŞMANLIK SÜRECİMİZ -->
+  <section class="process-intro" id="processSection">
     <div class="container">
-      <div class="intro-inner">
-        <div class="intro-content">
-          <span class="intro-badge reveal-up">
-            <span class="intro-badge-dot"></span>
-            KİŞİYE ÖZEL BESLENME YAKLAŞIMI
-          </span>
-
-          <h2 class="intro-title reveal-up">
-            Size Uygun Beslenme<br>
-            Modelini <span class="intro-title-accent">Birlikte</span><br>
-            Keşfedelim
-            <span class="intro-title-underline" aria-hidden="true">
-              <svg viewBox="0 0 140 8" width="140" height="8" fill="none">
-                <path d="M2 4 C35 0, 70 8, 105 4 C122 2, 132 6, 138 3" stroke="url(#titleLineGrad)" stroke-width="2" stroke-linecap="round"/>
-                <defs>
-                  <linearGradient id="titleLineGrad" x1="0" y1="0" x2="140" y2="0"><stop offset="0%" stop-color="#D96C5F"/><stop offset="50%" stop-color="#D98A5F"/><stop offset="100%" stop-color="#C99A4A"/></linearGradient>
-                </defs>
-              </svg>
-            </span>
-          </h2>
-
-          <p class="intro-desc reveal-up">
-            Her beden, her yaşam düzeni ve her hedef farklıdır. Bu yüzden hazır listeler yerine;
-            günlük rutininize, sağlık hedeflerinize ve sürdürülebilir alışkanlıklara uygun bir
-            beslenme modeli oluşturuyoruz.
-          </p>
-
-          <div class="intro-chips reveal-up">
-            <div class="intro-chip">
-              <div class="intro-chip-icon">
-                <svg viewBox="0 0 20 20" width="16" height="16" fill="none"><path d="M10 3C8 3 6 5 6 8C6 11 8 14 10 14C12 14 14 11 14 8C14 5 12 3 10 3Z" fill="var(--color-coral)"/><path d="M10 3C9 2 8 2 7 3C6 4 7 5 8 5C9 5 10 4 10 3Z" fill="var(--color-coral-dark)"/><path d="M10 3C11 2 12 2 13 3C14 4 13 5 12 5C11 5 10 4 10 3Z" fill="var(--color-coral-dark)"/></svg>
-              </div>
-              <span>Kişiye özel beslenme planı</span>
-            </div>
-            <div class="intro-chip">
-              <div class="intro-chip-icon">
-                <svg viewBox="0 0 20 20" width="16" height="16" fill="none"><rect x="4" y="4" width="12" height="13" rx="2" fill="var(--color-sky)"/><rect x="6" y="6" width="8" height="1.5" rx="0.5" fill="var(--white)"/><rect x="6" y="9" width="6" height="1.5" rx="0.5" fill="var(--white)"/><rect x="6" y="12" width="5" height="1.5" rx="0.5" fill="var(--white)"/></svg>
-              </div>
-              <span>Online ve yüz yüze danışmanlık</span>
-            </div>
-            <div class="intro-chip">
-              <div class="intro-chip-icon">
-                <svg viewBox="0 0 20 20" width="16" height="16" fill="none"><circle cx="10" cy="10" r="7" fill="var(--color-amber)"/><path d="M10 6V10L13 12" stroke="var(--white)" stroke-width="1.5" stroke-linecap="round"/></svg>
-              </div>
-              <span>Sürdürülebilir alışkanlık takibi</span>
-            </div>
-            <div class="intro-chip">
-              <div class="intro-chip-icon">
-                <svg viewBox="0 0 20 20" width="16" height="16" fill="none"><path d="M10 18C14 18 17 14 17 10C17 6 14 3 10 3C6 3 3 6 3 10C3 14 6 18 10 18Z" fill="var(--color-sage)"/><path d="M7 10H13" stroke="var(--white)" stroke-width="1.5" stroke-linecap="round"/><path d="M10 7V13" stroke="var(--white)" stroke-width="1.5" stroke-linecap="round"/></svg>
-              </div>
-              <span>Kilo yönetimi ve metabolizma desteği</span>
-            </div>
-          </div>
-
-          <div class="intro-actions reveal-up">
-            <a href="/iletisim" class="btn btn-primary intro-btn-primary">Birlikte Başlayalım</a>
-            <a href="/hizmetler" class="btn btn-outline intro-btn-outline">Programları İncele</a>
-          </div>
+      <div class="process-intro-header">
+        <span class="process-intro-badge">NASIL ÇALIŞIYORUZ</span>
+        <h2 class="process-intro-title">Danışmanlık Sürecimiz</h2>
+        <p class="process-intro-desc">
+          Hedeflerinize ulaşmanız için adım adım yanınızdayız. Bilimsel temelli, kişiye özel bir yol haritası ile sürdürülebilir başarıya birlikte yürüyoruz.
+        </p>
+      </div>
+      <div class="process-intro-grid">
+        <% process.forEach((step, i) => { %>
+        <div class="process-intro-card">
+          <div class="pic-step"><%= String(i + 1).padStart(2, '0') %></div>
+          <div class="pic-icon"><i data-lucide="<%= step.icon %>" style="width:26px;height:26px;"></i></div>
+          <h3 class="pic-title"><%= step.title %></h3>
+          <p class="pic-desc"><%= step.desc %></p>
         </div>
+        <% }); %>
       </div>
     </div>
   </section>
@@ -335,8 +233,8 @@
           <div class="about-ambient-glow"></div>
           
           <div class="about-image-frame-new">
-            <div class="about-image-card-new">
-              <img src="<%= about.image + '?v=' + Date.now() %>" alt="Dyt. Fulya Sarı - Diyetisyen" class="about-profile-img-new" loading="lazy">
+            <div class="about-image-card-new about-image-scale">
+              <img src="<%= about.image + '?v=2' %>" alt="Dyt. Fulya Sarı - Diyetisyen" class="about-profile-img-new" loading="lazy">
               <div class="about-img-overlay-new"></div>
             </div>
             
@@ -381,7 +279,7 @@
             <div class="about-title-underline-new"></div>
           </div>
           
-          <div class="about-description-group">
+          <div class="about-description-group reveal-stagger">
             <% about.description.forEach((paragraph, idx) => { %>
               <p class="about-editorial-text <%= idx === 0 ? 'about-lead-paragraph' : '' %>">
                 <%= paragraph %>
@@ -391,7 +289,7 @@
 
           <div class="about-pills-section">
             <span class="about-pills-title">Öne Çıkan Çalışma Alanları</span>
-            <div class="about-expertise-new">
+            <div class="about-expertise-new reveal-stagger">
               <% about.expertise.forEach((item, index) => { %>
                 <span class="expertise-pill-new pill-theme-<%= index % 4 %>">
                   <span class="pill-dot"></span>

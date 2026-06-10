@@ -99,159 +99,22 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  // ===== HERO SLIDER — Modern Premium =====
-  const heroSlider = document.getElementById('heroSlider');
-  const slides = document.querySelectorAll('.hero-slide');
-  const dots = document.querySelectorAll('.dot');
-  const prevBtn = document.getElementById('sliderPrev');
-  const nextBtn = document.getElementById('sliderNext');
-  const sliderProgress = document.getElementById('sliderProgressBar');
-  const counterCurrent = document.getElementById('sliderCounterCurrent');
-  const pauseIndicator = document.getElementById('sliderPausedIndicator');
-  let currentSlide = 0;
-  let slideInterval;
-  let progressInterval;
-  let isPaused = false;
-  let slideDuration = 6000;
-  let progressStart;
-  let touchStartX = 0;
-  let touchEndX = 0;
-  let isDragging = false;
-  const prefersReduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-
-  function updateCounter(index) {
-    if (counterCurrent) {
-      counterCurrent.textContent = String(index + 1).padStart(2, '0');
+  // === Word Rotator ===
+  (function() {
+    const container = document.getElementById('wordRotator');
+    if (!container) return;
+    const words = container.querySelectorAll('.rotator-word');
+    if (words.length < 2) return;
+    let current = 0;
+    function rotateWord() {
+      const prev = words[current];
+      prev.classList.remove('active');
+      current = (current + 1) % words.length;
+      const next = words[current];
+      next.classList.add('active');
     }
-  }
-
-  function goToSlide(index) {
-    slides.forEach(s => s.classList.remove('active'));
-    dots.forEach(d => d.classList.remove('active'));
-    slides[index].classList.add('active');
-    dots[index].classList.add('active');
-    currentSlide = index;
-    updateCounter(index);
-    if (!isPaused) resetProgress();
-  }
-
-  function nextSlide() { goToSlide((currentSlide + 1) % slides.length); }
-  function prevSlide() { goToSlide((currentSlide - 1 + slides.length) % slides.length); }
-
-  function startProgress() {
-    if (prefersReduced || !sliderProgress) return;
-    progressStart = performance.now();
-    const tick = () => {
-      if (isPaused) return;
-      const elapsed = performance.now() - progressStart;
-      const pct = Math.min(elapsed / slideDuration * 100, 100);
-      sliderProgress.style.width = pct + '%';
-      if (pct < 100) {
-        progressInterval = requestAnimationFrame(tick);
-      }
-    };
-    cancelAnimationFrame(progressInterval);
-    sliderProgress.style.width = '0%';
-    progressInterval = requestAnimationFrame(tick);
-  }
-  function resetProgress() {
-    if (sliderProgress) {
-      sliderProgress.style.width = '0%';
-    }
-    cancelAnimationFrame(progressInterval);
-    if (!isPaused) startProgress();
-  }
-
-  function startSlideTimer() { slideInterval = setInterval(nextSlide, slideDuration); }
-  function resetSlideTimer() { clearInterval(slideInterval); resetProgress(); startSlideTimer(); }
-
-  function setPaused(paused) {
-    isPaused = paused;
-    if (paused) {
-      clearInterval(slideInterval);
-      cancelAnimationFrame(progressInterval);
-      if (pauseIndicator) pauseIndicator.classList.add('show');
-    } else {
-      progressStart = performance.now() - (sliderProgress ? parseFloat(sliderProgress.style.width || '0') / 100 * slideDuration : 0);
-      startSlideTimer();
-      if (sliderProgress) startProgress();
-      if (pauseIndicator) pauseIndicator.classList.remove('show');
-    }
-  }
-
-  // Touch / swipe support
-  function handleTouchStart(e) {
-    touchStartX = e.changedTouches ? e.changedTouches[0].screenX : e.screenX;
-    isDragging = true;
-  }
-  function handleTouchEnd(e) {
-    if (!isDragging) return;
-    isDragging = false;
-    touchEndX = e.changedTouches ? e.changedTouches[0].screenX : e.screenX;
-    const diff = touchStartX - touchEndX;
-    if (Math.abs(diff) > 50) {
-      if (diff > 0) { nextSlide(); resetSlideTimer(); }
-      else { prevSlide(); resetSlideTimer(); }
-    }
-  }
-  function handleTouchMove(e) {
-    if (!isDragging) return;
-    const currentX = e.changedTouches ? e.changedTouches[0].screenX : e.screenX;
-    const diff = touchStartX - currentX;
-    if (Math.abs(diff) > 10) {
-      e.preventDefault();
-    }
-  }
-
-  // Mouse drag support
-  function handleMouseDown(e) {
-    if (e.button !== 0) return;
-    handleTouchStart(e);
-  }
-  function handleMouseUp(e) {
-    handleTouchEnd(e);
-  }
-  function handleMouseMove(e) {
-    if (!isDragging) return;
-    handleTouchMove(e);
-  }
-
-  // Keyboard navigation
-  function handleSliderKeydown(e) {
-    if (document.activeElement && !heroSlider.contains(document.activeElement)) return;
-    if (e.key === 'ArrowLeft') { prevSlide(); resetSlideTimer(); e.preventDefault(); }
-    if (e.key === 'ArrowRight') { nextSlide(); resetSlideTimer(); e.preventDefault(); }
-  }
-
-  if (slides.length > 1) {
-    startSlideTimer();
-    startProgress();
-    if (prevBtn) prevBtn.addEventListener('click', () => { prevSlide(); resetSlideTimer(); });
-    if (nextBtn) nextBtn.addEventListener('click', () => { nextSlide(); resetSlideTimer(); });
-    dots.forEach(dot => {
-      dot.addEventListener('click', () => { goToSlide(parseInt(dot.dataset.index)); resetSlideTimer(); });
-    });
-
-    // Touch events
-    heroSlider.addEventListener('touchstart', handleTouchStart, { passive: true });
-    heroSlider.addEventListener('touchend', handleTouchEnd, { passive: true });
-    heroSlider.addEventListener('touchmove', handleTouchMove, { passive: false });
-
-    // Mouse drag
-    heroSlider.addEventListener('mousedown', handleMouseDown);
-    heroSlider.addEventListener('mouseup', handleMouseUp);
-    heroSlider.addEventListener('mousemove', handleMouseMove);
-    heroSlider.addEventListener('mouseleave', () => { if (isDragging) { isDragging = false; } });
-
-    // Hover pause
-    heroSlider.addEventListener('mouseenter', () => { if (!prefersReduced) setPaused(true); });
-    heroSlider.addEventListener('mouseleave', () => { if (!prefersReduced) setPaused(false); });
-
-    // Keyboard
-    document.addEventListener('keydown', handleSliderKeydown);
-  } else if (slides.length === 1) {
-    goToSlide(0);
-  }
+    setInterval(rotateWord, 3200);
+  })();
 
   // ===== SCROLL PROGRESS BAR =====
   const progressBar = document.getElementById('scrollProgress');
@@ -482,6 +345,19 @@ document.addEventListener('DOMContentLoaded', () => {
         const offset = (window.innerHeight - rect.top) * speed;
         ctaBanner.style.backgroundPosition = `center ${offset}px`;
       }
+    });
+  }
+
+  // ===== PARALLAX SHAPES — subtle mouse follow =====
+  const parallaxShapes = document.querySelectorAll('.parallax-shape');
+  if (parallaxShapes.length && !prefersReducedMotion) {
+    document.addEventListener('mousemove', (e) => {
+      const x = (e.clientX / window.innerWidth - 0.5) * 2;
+      const y = (e.clientY / window.innerHeight - 0.5) * 2;
+      parallaxShapes.forEach((shape) => {
+        const speed = parseFloat(shape.dataset.speed) || 0.02;
+        shape.style.transform = `translate(${x * speed * 100}px, ${y * speed * 100}px)`;
+      });
     });
   }
 
