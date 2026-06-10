@@ -69,7 +69,7 @@
           <div class="about-image-backdrop"></div>
           <div class="about-image-frame-new">
             <div class="about-image-card-new">
-              <img src="<%= about.image %>" alt="Dyt. Fulya Sarı - Diyetisyen" class="about-profile-img-new" loading="lazy">
+              <img src="<%= about.image + '?v=' + Date.now() %>" alt="Dyt. Fulya Sarı - Diyetisyen" class="about-profile-img-new" loading="lazy">
               <div class="about-img-overlay-new"></div>
             </div>
             <div class="about-decorative-frame-1"></div>
@@ -84,11 +84,11 @@
                   <defs>
                     <path id="sealPath" d="M 50,50 m -37,0 a 37,37 0 1,1 74,0 a 37,37 0 1,1 -74,0" fill="none"/>
                   </defs>
-                  <text class="seal-text"><textPath href="#sealPath">DİYETİSYEN FULYA SARI ★ DANIŞMANLIK ★</textPath></text>
+                  <text class="seal-text"><textPath href="#sealPath" startOffset="50%" text-anchor="middle">SAĞLIKLI YAŞAM • BESLENME • DANIŞMANLIK</textPath></text>
                 </svg>
                 <div class="seal-center">
-                  <span class="seal-number">DY</span>
-                  <span class="seal-year">DYT</span>
+                  <span class="seal-number">2013</span>
+                  <span class="seal-year">DEN BERİ</span>
                 </div>
               </div>
             </div>
