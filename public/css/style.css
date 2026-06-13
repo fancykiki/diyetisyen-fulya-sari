@@ -4530,15 +4530,19 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .process-intro-video {
+  padding: 8px 0 0;
+}
+
+.process-intro-video-wrapper {
   max-width: 720px;
-  margin: 36px auto 48px;
+  margin: 0 auto;
   border-radius: 20px;
   overflow: hidden;
   box-shadow: 0 8px 32px rgba(16, 41, 31, 0.1);
   background: #f0ebe0;
 }
 
-.process-intro-video iframe {
+.process-intro-video-wrapper iframe {
   width: 100%;
   aspect-ratio: 16 / 9;
   display: block;
