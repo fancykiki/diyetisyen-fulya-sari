@@ -6768,7 +6768,10 @@ h1, h2, h3, h4, h5, h6 {
 .contact-card > i,
 .contact-card > svg,
 .shorts-card > i,
-.shorts-card > svg,
+.shorts-card > svg {
+  width: auto;
+  height: auto;
+}
 
 /* YouTube Shorts Section */
 .youtube-shorts {
