@@ -6853,3 +6853,132 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
+/* YouTube Channel Intro */
+.channel-intro {
+  padding: 0;
+  margin-top: -2px;
+}
+
+.channel-intro-card {
+  position: relative;
+  background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 50%, #1a1a1a 100%);
+  border-radius: 20px;
+  padding: 40px 48px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 32px;
+  margin: 48px 0;
+}
+
+.channel-intro-bg {
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(ellipse at 20% 50%, rgba(255, 0, 0, 0.08) 0%, transparent 60%),
+    radial-gradient(ellipse at 80% 50%, rgba(255, 255, 255, 0.03) 0%, transparent 50%);
+  pointer-events: none;
+}
+
+.channel-intro-content {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 28px;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+.channel-intro-icon {
+  flex-shrink: 0;
+  width: 56px;
+  height: 56px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #ff0000;
+  border-radius: 14px;
+  color: #fff;
+}
+
+.channel-intro-text {
+  flex: 1;
+  min-width: 240px;
+}
+
+.channel-intro-title {
+  font-family: var(--font-heading);
+  font-size: 20px;
+  font-weight: 700;
+  color: #fff;
+  margin: 0 0 6px;
+}
+
+.channel-intro-quote {
+  font-size: 15px;
+  color: #f0c0c0;
+  font-style: italic;
+  margin: 0 0 4px;
+  font-weight: 500;
+}
+
+.channel-intro-desc {
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.65);
+  margin: 0;
+  line-height: 1.6;
+}
+
+.channel-intro-btn {
+  flex-shrink: 0;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background: #ff0000;
+  color: #fff;
+  padding: 12px 28px;
+  border-radius: 50px;
+  font-size: 15px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: transform 0.3s var(--ease-out-expo), box-shadow 0.3s var(--ease-out-expo);
+  font-family: var(--font-body);
+}
+
+.channel-intro-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(255, 0, 0, 0.35);
+}
+
+@media (max-width: 768px) {
+  .channel-intro-card {
+    padding: 32px 24px;
+    flex-direction: column;
+    text-align: center;
+  }
+  .channel-intro-content {
+    flex-direction: column;
+    text-align: center;
+    gap: 16px;
+  }
+  .channel-intro-icon {
+    margin: 0 auto;
+  }
+  .channel-intro-btn {
+    width: 100%;
+    justify-content: center;
+  }
+}
+
+/* Marquee channel tag */
+.hero-marquee-channel {
+  display: inline-flex !important;
+  align-items: center;
+  gap: 6px;
+  background: rgba(255, 0, 0, 0.12);
+  border: 1px solid rgba(255, 0, 0, 0.2);
+  color: #ff4d4d !important;
+  font-weight: 600 !important;
+}
+
