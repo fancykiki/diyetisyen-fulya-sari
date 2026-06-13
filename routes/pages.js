@@ -19,7 +19,11 @@ router.get('/', (req, res) => {
 router.get('/hakkimizda', (req, res) => {
   res.render('about', mergeData({
     path: '/hakkimizda',
-    meta: { title: 'Hakkımızda', desc: 'Antalya'da sağlıklı beslenme ve kilo yönetimi danışmanlığı sunan bir diyetisyen' }
+    aboutHeroDescription: "Dyt. Fulya Sarı, Antalya'da kilo yönetimi ve sağlıklı beslenme alışkanlıkları üzerine danışmanlık sunan bir diyetisyendir.",
+    meta: {
+      title: 'Hakkımızda',
+      desc: "Antalya'da sağlıklı beslenme ve kilo yönetimi danışmanlığı sunan bir diyetisyen"
+    }
   }));
 });
 
