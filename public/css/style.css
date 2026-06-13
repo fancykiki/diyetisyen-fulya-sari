@@ -4529,6 +4529,22 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0 auto;
 }
 
+.process-intro-video {
+  max-width: 720px;
+  margin: 36px auto 48px;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 8px 32px rgba(16, 41, 31, 0.1);
+  background: #f0ebe0;
+}
+
+.process-intro-video iframe {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  display: block;
+  border: 0;
+}
+
 .process-intro-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
