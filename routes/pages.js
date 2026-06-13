@@ -19,7 +19,7 @@ router.get('/', (req, res) => {
 router.get('/hakkimizda', (req, res) => {
   res.render('about', mergeData({
     path: '/hakkimizda',
-    meta: { title: 'Hakkımızda', desc: siteData.about.description[0].substring(0, 160) }
+    meta: { title: 'Hakkımızda', desc: 'Antalya'da sağlıklı beslenme ve kilo yönetimi danışmanlığı sunan bir diyetisyen' }
   }));
 });
 
