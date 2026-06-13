@@ -23,6 +23,10 @@ app.use((req, res) => {
   });
 });
 
-app.listen(PORT, () => {
-  console.log(`Site çalışıyor: http://localhost:${PORT}`);
-});
+if (require.main === module) {
+  app.listen(PORT, () => {
+    console.log(`Site çalışıyor: http://localhost:${PORT}`);
+  });
+}
+
+module.exports = app;
